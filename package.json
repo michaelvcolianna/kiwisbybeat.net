@@ -10,6 +10,6 @@
   "devDependencies": {
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@nuxt/image-edge": "^1.0.0-27719579.87dcdf2",
-    "nuxt": "3.0.0-rc.10"
+    "nuxt": "3.0.0-rc.11"
   }
 }
