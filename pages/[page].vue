@@ -1,6 +1,7 @@
 <script setup>
 const { page } = useRoute().params
 
+// Get the children of this series, excluding this page
 const series = await queryContent(page)
   .only(['_path', 'title'])
   .where({
