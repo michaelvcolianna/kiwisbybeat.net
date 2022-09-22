@@ -44,6 +44,16 @@ try
 }
 catch(error) {}
 
+// Get comic info
+const page = await queryContent()
+  .only(['title'])
+  .where({
+    _path: {
+      $eq: `/${series}/${comic}`
+    }
+  })
+  .findOne()
+
 // Get series info
 const parent = await queryContent()
   .only(['_path', 'title'])
@@ -53,10 +63,22 @@ const parent = await queryContent()
     }
   })
   .findOne()
+
+useHead({
+  titleTemplate: (titleChunk) => {
+    return `${parent.title} – ${titleChunk} | Kiwis by Beat!`
+  }
+})
+
 </script>
 
 <template>
   <main>
+    <h1>
+      <small>{{ parent.title }}</small>
+      {{ page.title }}
+    </h1>
+
     <ContentDoc />
 
     <nav>

@@ -1,5 +1,9 @@
 <script setup>
-// home page baby
+useHead({
+  titleTemplate: (titleChunk) => {
+    return 'Home | Kiwis by Beat!'
+  }
+})
 </script>
 
 <template>
