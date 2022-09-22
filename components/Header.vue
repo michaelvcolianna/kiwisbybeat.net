@@ -1,6 +1,6 @@
 <template>
   <header>
-    <NuxtLink to="/">kiwis by beat!</NuxtLink>
+    <NuxtLink to="/">Kiwis by Beat!</NuxtLink>
 
     <nav>
       <h3>Comics</h3>
