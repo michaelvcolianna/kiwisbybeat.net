@@ -3,7 +3,14 @@ title: Home
 navigation: false
 ---
 
-![A manipulated screenshot of the old website's front page, with a list of comics.](images/website.jpg)
+::comic-image
+---
+src: images/website.jpg
+alt: 'A manipulated screenshot of the old website’s front page, with a list of comics.'
+height: 618
+width: 646
+---
+::
 
 **If nothing else, please read [minus!](/minus) and/or [The Mildly Inconvenient Journey of Pelen Purul](/pelen-purul). All of Ryan’s comics are great but those two are truly phenomenal.**
 

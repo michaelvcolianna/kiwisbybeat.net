@@ -2,7 +2,7 @@
 title: Great!
 ---
 
-![Ryan's cover for Great!, featuring the main character at the bar.](images/great/greatlogo.jpg)
+![Ryan's cover for Great!, featuring the main character at the bar.](/images/great/greatlogo.jpg)
 
 ## Ryan's notes from this series:
 

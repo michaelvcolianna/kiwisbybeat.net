@@ -2,8 +2,8 @@
 title: 'Modern Fried Snake'
 ---
 
-![Ryan's title for Modern Fried Snake.](images/modern-fried-snake/moderntitle.jpg)
-![Ryan's cover for Modern Fried Snake, featuring two characters.](images/modern-fried-snake/modernsplash.jpg)
+![Ryan's title for Modern Fried Snake.](/images/modern-fried-snake/moderntitle.jpg)
+![Ryan's cover for Modern Fried Snake, featuring two characters.](/images/modern-fried-snake/modernsplash.jpg)
 
 ## Ryan's notes from this series:
 

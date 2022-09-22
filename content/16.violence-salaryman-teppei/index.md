@@ -2,7 +2,7 @@
 title: 'VIOLENCE SALARYMAN TEPPEI!'
 ---
 
-![Ryan's cover for VIOLENCE SALARYMAN TEPPEI, featuring the main character.](images/violence-salaryman-teppei/t1.jpg)
+![Ryan's cover for VIOLENCE SALARYMAN TEPPEI, featuring the main character.](/images/violence-salaryman-teppei/t1.jpg)
 
 ## Ryan's notes from this series:
 

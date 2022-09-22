@@ -2,7 +2,7 @@
 title: 'People Comics'
 ---
 
-![A compilation of various callouts for People Comics.](images/people-comics/peopletitle.jpg)
+![A compilation of various callouts for People Comics.](/images/people-comics/peopletitle.jpg)
 
 ## Ryan's notes from this series:
 

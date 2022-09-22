@@ -2,15 +2,11 @@
 const props = defineProps({
   src: {
     type: String,
-    default: ''
+    required: true
   },
   alt: {
     type: String,
-    default: ''
-  },
-  title: {
-    type: String,
-    default: ''
+    default: undefined
   },
   width: {
     type: [String, Number],
@@ -25,18 +21,28 @@ const props = defineProps({
     default: 'lazy'
   }
 })
+
+const hasCaption = computed(() => {
+  const slots = useSlots()
+
+  return (slots['default'])
+})
 </script>
 
 <template>
-  <figure :aria-hidden="!alt && !title">
+  <figure>
     <nuxt-picture
       :src="src"
-      :alt="alt || title"
+      :alt="alt"
       :width="width"
       :height="height"
       :loading="loading"
     />
 
-    <figcaption v-if="title">{{ title }}</figcaption>
+    <figcaption v-if="hasCaption">
+      <h2>Description</h2>
+
+      <slot />
+    </figcaption>
   </figure>
 </template>

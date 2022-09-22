@@ -2,8 +2,8 @@
 title: '2006 Comic Revue'
 ---
 
-![Ryan's logo for the 2006 Comic Revue.](images/2006-comic-revue/crlogo.gif)
-![Ryan's cover for 2006 Comic Revue, featuring a person near a chain-link fence.](images/2006-comic-revue/crmain11.gif)
+![Ryan's logo for the 2006 Comic Revue.](/images/2006-comic-revue/crlogo.gif)
+![Ryan's cover for 2006 Comic Revue, featuring a person near a chain-link fence.](/images/2006-comic-revue/crmain11.gif)
 
 ## Ryan's notes from this series:
 

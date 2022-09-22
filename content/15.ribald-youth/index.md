@@ -2,8 +2,8 @@
 title: 'Ribald Youth'
 ---
 
-![Ryan's title for Ribald Youth](images/ribald-youth/logo.jpg)
-![Ryan's cover for Ribald Youth, featuring three characters.](images/ribald-youth/start.jpg)
+![Ryan's title for Ribald Youth](/images/ribald-youth/logo.jpg)
+![Ryan's cover for Ribald Youth, featuring three characters.](/images/ribald-youth/start.jpg)
 
 ## Ryan's notes from this series:
 
