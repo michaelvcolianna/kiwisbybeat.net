@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  titleTemplate: (titleChunk) => {
+  titleTemplate: () => {
     return 'Home | Kiwis by Beat!'
   }
 })

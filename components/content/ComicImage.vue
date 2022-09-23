@@ -21,12 +21,6 @@ const props = defineProps({
     default: 'lazy'
   }
 })
-
-const hasCaption = computed(() => {
-  const slots = useSlots()
-
-  return (slots['default'])
-})
 </script>
 
 <template>
@@ -39,7 +33,7 @@ const hasCaption = computed(() => {
       :loading="loading"
     />
 
-    <figcaption v-if="hasCaption">
+    <figcaption v-if="$slots.default">
       <h2>Description</h2>
 
       <slot />

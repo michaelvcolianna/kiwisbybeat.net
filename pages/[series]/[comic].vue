@@ -12,37 +12,40 @@ const { series, comic } = useRoute().params
 //   .findSurround(comic)
 
 // Temporary solution until findSurround works
-let prev, next
-
+// @note Then/catch prevents a 500, but ohmyfetch still outputs in the console
 const comicParts = comic.split('-')
 const numPrev = parseInt(comicParts[1]) - 1
 const numNext = parseInt(comicParts[1]) + 1
 
-try
-{
-  prev = await queryContent()
-    .only(['_path', 'title'])
-    .where({
-      _path: {
-        $eq: `/${series}/part-${numPrev}`
-      }
-    })
-    .findOne()
-}
-catch(error) {}
+const prev = await queryContent()
+  .only(['_path', 'title'])
+  .where({
+    _path: {
+      $eq: `/${series}/part-${numPrev}`
+    }
+  })
+  .findOne()
+  .then((response) => {
+    return response
+  })
+  .catch((error) => {
+    return null
+  })
 
-try
-{
-  next = await queryContent()
-    .only(['_path', 'title'])
-    .where({
-      _path: {
-        $eq: `/${series}/part-${numNext}`
-      }
-    })
-    .findOne()
-}
-catch(error) {}
+const next = await queryContent()
+  .only(['_path', 'title'])
+  .where({
+    _path: {
+      $eq: `/${series}/part-${numNext}`
+    }
+  })
+  .findOne()
+  .then((response) => {
+    return response
+  })
+  .catch((error) => {
+    return null
+  })
 
 // Get comic info
 const page = await queryContent()
