@@ -1,4 +1,4 @@
-# Kiwis By Beat (Reimagined)
+# Kiwis By Beat (Reimagined/Nuxt3)
 
 A reimagining of the Kiwis By Beat website by <a href="https://en.wikipedia.org/wiki/Ryan_Armand" target="_blank" rel="noopener noreferrer">Ryan Armand</a>. The intent is to have the comics in a more readable format and, eventually, provide some decent descriptive text for fans using assistive devices.
 
