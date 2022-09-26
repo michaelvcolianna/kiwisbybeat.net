@@ -2,14 +2,7 @@
 title: minus!
 ---
 
-::comic-image
----
-src: images/minus/minuscover.jpg
-alt: 'A compilation of various callouts for minus.'
-height: 741
-width: 1200
----
-::
+![](/images/minus/minuscover.jpg)
 
 ## Ryan's notes from this series:
 

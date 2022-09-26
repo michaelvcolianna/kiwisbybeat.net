@@ -3,20 +3,13 @@ title: Home
 navigation: false
 ---
 
-::comic-image
----
-src: images/website.jpg
-alt: 'A manipulated screenshot of the old website’s front page, with a list of comics.'
-height: 618
-width: 646
----
-::
+![](/images/website.jpg)
 
 **If nothing else, please read [minus!](/minus) and/or [The Mildly Inconvenient Journey of Pelen Purul](/pelen-purul). All of Ryan’s comics are great but those two are truly phenomenal.**
 
-A reimagining of the Kiwis by Beat! web site by [Ryan Armand](https://en.wikipedia.org/wiki/Ryan_Armand){:target="_blank"}, pieced together by Michael V. Colianna ([GitHub](https://github.com/michaelvcolianna){:target="_blank"}). In most cases, I have tried to keep the names of parts intact per appearance on the original site, whether those were errors by Ryan or otherwise. In some cases I had to guess, though. Feel free to send me a message on Twitter or GitHub if you have any of the missing images, or if you have better names for some of the series/parts.
+A reimagining of the Kiwis by Beat! web site by [Ryan Armand](https://en.wikipedia.org/wiki/Ryan_Armand), pieced together by Michael V. Colianna ([GitHub](https://github.com/michaelvcolianna)). In most cases, I have tried to keep the names of parts intact per appearance on the original site, whether those were errors by Ryan or otherwise. In some cases I had to guess, though. Feel free to send me a message on Twitter or GitHub if you have any of the missing images, or if you have better names for some of the series/parts.
 
-Since the original domain expired, this is a fan archive of the content from kiwisbybeat.com, based off the hard work of Toggle ([GitHub](https://github.com/tgle/kiwisbybeat-archive){:target="blank"}). You can [view the original site here](https://kiwisbybeat.netlify.com){:target="_blank"}. It also includes some content from another mirror by [KiwiEnquirer](https://en.wikipedia.org/wiki/User:KiwiEnquirer){:target="_blank"} ([mirror site](http://www.kiwisbymirror.rf.gd){:target="_blank"}).
+Since the original domain expired, this is a fan archive of the content from kiwisbybeat.com, based off the hard work of Toggle ([GitHub](https://github.com/tgle/kiwisbybeat-archive){:target="blank"}). You can [view the original site here](https://kiwisbybeat.netlify.com). It also includes some content from another mirror by [KiwiEnquirer](https://en.wikipedia.org/wiki/User:KiwiEnquirer) ([mirror site](http://www.kiwisbymirror.rf.gd)).
 
 A huge goal for this site to make the comics more accessible. A few have descriptions right now. It's a long process to add image captions, but worthwhile so *everyone* can enjoy Ryan's comics. If you're able to contribute some, please reach out! Any help is appreciated!
 
