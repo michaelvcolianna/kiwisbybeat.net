@@ -4,7 +4,7 @@ A reimagining of the Kiwis By Beat website by <a href="https://en.wikipedia.org/
 
 ### Status Note
 
-As of September 22nd, 2022, [Nuxt Image still doesn't support static generation](https://github.com/nuxt/image/discussions/548). So instead of reworking the HTML and adding CSS/reactivity/etc. I will look into the other frameworks and pop those on separate branches.
+As of September 22nd, 2022, [Nuxt Image still doesn't support static generation](https://github.com/nuxt/image/discussions/548). So instead of reworking the HTML and adding CSS/reactivity/etc. I'm proceeding with the Gatsby branch.
 
 ### Other Fan Archives
 
