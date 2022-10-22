@@ -62,6 +62,7 @@ exports.createPages = async({ graphql, actions, reporter }) => {
       context: {
         id: node.id,
         pageType: filePath.name,
+        parent: `/${series}\/chapter.md/`,
         series: `/${series}\/(?!chapter)/`
       }
     })

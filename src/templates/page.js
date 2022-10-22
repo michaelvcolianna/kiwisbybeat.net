@@ -24,6 +24,7 @@ const PageTemplate = ({
       frontmatter,
       html
     },
+    parent,
     series: {
       tableOfContents
     },
@@ -56,6 +57,12 @@ const PageTemplate = ({
       <main id="content">
         {pageType !== 'home' && (
           <ul>
+            <li key={parent.id}>
+              <Link to={`/${urlFromPath(parent.fileAbsolutePath)}`}>
+                {parent.frontmatter.title}
+              </Link>
+            </li>
+
             {pages.map(node => (
               <li key={node.id}>
                 <Link to={urlFromPath(node.fileAbsolutePath)}>
@@ -80,12 +87,19 @@ const PageTemplate = ({
 }
 
 export const query = graphql`
-  query($id: String!, $series: String) {
+  query($id: String!, $parent: String, $series: String) {
     page: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
       }
       html
+    }
+    parent: markdownRemark(fileAbsolutePath: { regex: $parent }) {
+      id
+      fileAbsolutePath
+      frontmatter {
+        title
+      }
     }
     series: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/chapter.md/" } }
