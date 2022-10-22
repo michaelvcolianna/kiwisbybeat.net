@@ -1,52 +1,69 @@
 const path = require('path')
-const postTemplate = path.resolve(`./src/templates/post.jsx`)
+const pageTemplate = path.resolve('./src/templates/page.js')
+
+// Add import aliases
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        '@components': path.resolve(__dirname, 'src/components')
+      }
+    }
+  })
+}
 
 exports.createPages = async({ graphql, actions, reporter }) => {
-  const { createPage } = actions
   const result = await graphql(`
     query {
-      allMdx {
+      allMarkdownRemark {
         nodes {
           id
-          internal {
-            contentFilePath
-          }
+          fileAbsolutePath
         }
       }
     }
   `)
 
   if(result.errors) {
-    reporter.panicOnBuild('Error loading MDX result', result.errors)
+    reporter.panicOnBuild('Error loading markdownRemark result', result.errors)
   }
 
-  const posts = result.data.allMdx.nodes
+  const posts = result.data.allMarkdownRemark.nodes
 
   posts.forEach(node => {
-    // Retrieve the parsed paths of the required elements
-    const filePath = path.parse(node.internal.contentFilePath)
+    // Retrieve the parsed paths for the required elements
+    const filePath = path.parse(node.fileAbsolutePath)
     const dirPath = path.parse(filePath.dir)
+    const outerPath = path.parse(dirPath.dir)
 
-    // Remove the ordering numbers
-    const ordering = /^\d+./gm
-    const series = dirPath.base.replace(ordering, '')
-    const comic = filePath.name.replace(ordering, '')
+    // Series and comic start blank
+    let series = ''
+    let comic = ''
 
-    if(series !== 'content') {
-      let pagePath = `/${series}`
+    if(filePath.name !== 'home') {
+      // Expression to remove the ordering numbers
+      const ordering = /^\d+./gm
 
-      // Add the end of the path if necessary
-      if(comic !== 'index') {
-        pagePath = pagePath + `/${comic}`
+      // Update the series accordingly
+      series = filePath.name === 'chapter'
+        ? dirPath.base.replace(ordering, '')
+        : outerPath.base.replace(ordering, '')
+
+      // Update the comic if needed
+      if(filePath.name === 'docs') {
+        comic = `/${dirPath.base.replace(ordering, '')}`
       }
-
-      createPage({
-        path: pagePath,
-        component: `${postTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
-        context: {
-          id: node.id
-        }
-      })
     }
+
+    // Add the page
+    actions.createPage({
+      path: `/${series}${comic}`,
+      component: pageTemplate,
+      context: {
+        id: node.id,
+        pageType: filePath.name,
+        series: `/${series}/`
+      }
+    })
   })
 }
