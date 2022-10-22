@@ -11,5 +11,3 @@ Ryan's notes from this series:
 > People comics! Starring humans!
 
 To all appearances, this comic appears to be complete.
-
-[Begin Reading ›](./part-1)

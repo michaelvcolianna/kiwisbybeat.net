@@ -9,5 +9,3 @@ Ryan's notes from this series:
 > It's a short comic.
 
 To all appearances, this comic appears to be complete.
-
-[Begin Reading ›](./part-1)

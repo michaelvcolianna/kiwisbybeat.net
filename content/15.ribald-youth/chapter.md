@@ -11,5 +11,3 @@ Ryan's notes from this series:
 > Comic reads from right to left
 
 To all appearances, this comic appears to be complete.
-
-[Begin Reading ›](./part-1)

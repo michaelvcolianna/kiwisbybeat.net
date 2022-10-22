@@ -5,22 +5,19 @@ import HomePage from '@components/home-page'
 import SeriesPage from '@components/series-page'
 import ComicPage from '@components/comic-page'
 
+import ExternalLink from '@components/external-link'
+import urlFromPath from '@components/url-from-path'
+
 const Components = {
   home: HomePage,
   chapter: SeriesPage,
   docs: ComicPage
 }
 
-const urlFromPath = (path) => {
-  const part = path.split('/').reverse()[1]
-  const ordering = /^\d+./gm
-
-  return part.replace(ordering, '')
-}
-
 const PageTemplate = ({
   data: {
     page: {
+      pagePath,
       frontmatter,
       html
     },
@@ -29,7 +26,8 @@ const PageTemplate = ({
       tableOfContents
     },
     comics: {
-      pages
+      pages,
+      pageNav
     }
   },
   pageContext: {
@@ -41,7 +39,9 @@ const PageTemplate = ({
   return (
     <>
       <header>
-        future header component
+        <Link to="/">
+          Kiwis by Beat!
+        </Link>
 
         <ul>
           {tableOfContents.map(node => (
@@ -55,33 +55,26 @@ const PageTemplate = ({
       </header>
 
       <main id="content">
-        {pageType !== 'home' && (
-          <ul>
-            <li key={parent.id}>
-              <Link to={`/${urlFromPath(parent.fileAbsolutePath)}`}>
-                {parent.frontmatter.title}
-              </Link>
-            </li>
-
-            {pages.map(node => (
-              <li key={node.id}>
-                <Link to={urlFromPath(node.fileAbsolutePath)}>
-                  {node.frontmatter.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
-
-        <LayoutComponent>
+        <LayoutComponent
+          parent={parent}
+          pages={pages}
+          pagePath={pagePath}
+          pageNav={pageNav}
+        >
           <h1>{frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </LayoutComponent>
       </main>
 
       <footer>
-        future footer component
+        Comics © 2003-2015 by <ExternalLink href="https://en.wikipedia.org/wiki/Ryan_Armand">Ryan Armand</ExternalLink>.
+        <br />
+        Site 2019-now by <ExternalLink href="https://github.com/michaelvcolianna">MVC</ExternalLink>.
       </footer>
+
+      <div hidden>
+        <span id="label-external">Opens in a new window/tab</span>
+      </div>
     </>
   )
 }
@@ -89,6 +82,8 @@ const PageTemplate = ({
 export const query = graphql`
   query($id: String!, $parent: String, $series: String) {
     page: markdownRemark(id: { eq: $id }) {
+      id
+      pagePath: fileAbsolutePath
       frontmatter {
         title
       }
@@ -122,6 +117,26 @@ export const query = graphql`
         fileAbsolutePath
         frontmatter {
           title
+        }
+      }
+      pageNav: edges {
+        node {
+          id
+          fileAbsolutePath
+        }
+        next {
+          id
+          fileAbsolutePath
+          frontmatter {
+            title
+          }
+        }
+        previous {
+          id
+          fileAbsolutePath
+          frontmatter {
+            title
+          }
         }
       }
     }

@@ -11,5 +11,3 @@ slug: pelen-purul
 ![](pelen.jpg "A compilation of various callouts for the Pelen Purul story.")
 
 No information accompanies this comic. To all appearances, this comic appears to be complete.
-
-[Begin Reading ›](./part-1)

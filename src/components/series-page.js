@@ -1,11 +1,32 @@
 import * as React from 'react'
+import { Link } from 'gatsby'
 
-const SeriesPage = ({ children }) => {
+import urlFromPath from '@components/url-from-path'
+
+const SeriesPage = ({ parent, pages, children }) => {
   return (
     <div>
-      <h6><em>SeriesPage</em></h6>
+      <ul>
+        <li key={parent.id}>
+          <Link to={`/${urlFromPath(parent.fileAbsolutePath)}`}>
+            {parent.frontmatter.title}
+          </Link>
+        </li>
+
+        {pages.map(node => (
+          <li key={node.id}>
+            <Link to={`/${urlFromPath(parent.fileAbsolutePath)}/${urlFromPath(node.fileAbsolutePath)}`}>
+              {node.frontmatter.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       {children}
+
+      <Link to="part-1">
+        Begin Reading ›
+      </Link>
     </div>
   )
 }
