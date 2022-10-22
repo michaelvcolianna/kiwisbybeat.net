@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Kiwis by Beat!',
-    siteUrl: 'https://www.yourdomain.tld'
+    siteUrl: 'https://kiwisbybeat.net'
   },
   plugins: [
     'gatsby-plugin-image',
