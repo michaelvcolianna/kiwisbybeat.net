@@ -33,7 +33,7 @@ const HomePage = ({ body }) => {
         <p>
           Since the original domain expired, this is a fan archive of the content from kiwisbybeat.com, based off the hard work of <ExternalLink href="https://github.com/tgle/kiwisbybeat-archive">Toggle</ExternalLink>.
           You can <ExternalLink href="https://kiwisbybeat.netlify.com">view the original site here</ExternalLink>.
-          It also includes some content from another mirror by <ExternalLink href="https://en.wikipedia.org/wiki/User:KiwiEnquirer">KiwiEnquirer</ExternalLink> (<ExternalLink href="http://www.kiwisbymirror.rf.gd">mirror site</ExternalLink>).
+          It also includes some content from <ExternalLink href="http://kiwisbybeat.byethost12.com/">another mirror</ExternalLink> by <ExternalLink href="https://en.wikipedia.org/wiki/User:KiwiEnquirer">KiwiEnquirer</ExternalLink>.
         </p>
 
         <p>
