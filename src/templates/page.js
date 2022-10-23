@@ -9,6 +9,7 @@ import HomePage from '@components/home-page'
 import SeriesPage from '@components/series-page'
 import ComicPage from '@components/comic-page'
 
+// Dynamic resolver for LayoutContainer component
 const Components = {
   home: HomePage,
   chapter: SeriesPage,

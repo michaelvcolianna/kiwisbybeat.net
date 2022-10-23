@@ -3,7 +3,8 @@ import { Link } from 'gatsby'
 
 import urlFromPath from '@components/url-from-path'
 
-const PageLink = (href, label) => {
+// Inline component for the previous/next navigation
+const PageLink = ({ href, label }) => {
   return (
     <li>
       {href
@@ -15,10 +16,12 @@ const PageLink = (href, label) => {
 }
 
 const ComicPage = ({ parent, pagePath, pageNav, children }) => {
+  // Get the edge for this page
   const edge = pageNav.find(nav => {
     return nav.node.fileAbsolutePath === pagePath
   })
 
+  // Set the URLs for previous/next, if present
   const previous = edge.previous
     ? `../${urlFromPath(edge.previous.fileAbsolutePath)}`
     : null

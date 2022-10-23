@@ -1,9 +1,6 @@
 import * as React from 'react'
 
-const ExternalLink = ({
-  href,
-  children
-}) => {
+const ExternalLink = ({ href, children }) => {
   return (
     <a
       href={href}
