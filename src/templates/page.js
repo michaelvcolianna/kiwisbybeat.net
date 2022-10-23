@@ -69,7 +69,7 @@ const PageTemplate = ({
       <footer>
         Comics © 2003-2015 by <ExternalLink href="https://en.wikipedia.org/wiki/Ryan_Armand">Ryan Armand</ExternalLink>.
         <br />
-        Site 2019-now by <ExternalLink href="https://github.com/michaelvcolianna">MVC</ExternalLink>.
+        Site 2019-{new Date().getFullYear()} by <ExternalLink href="https://github.com/michaelvcolianna">MVC</ExternalLink>.
       </footer>
 
       <div hidden>
