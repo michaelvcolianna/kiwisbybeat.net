@@ -3,20 +3,24 @@ import { Link } from 'gatsby'
 
 import urlFromPath from '@components/url-from-path'
 
+const pageUrl = (parent, child) => {
+  return `/${urlFromPath(parent)}/${urlFromPath(child)}`
+}
+
 const SeriesPage = ({ parent, pages, children }) => {
   return (
-    <div>
+    <>
       <ul>
-        <li key={parent.id}>
+        <li>
           <Link to={`/${urlFromPath(parent.fileAbsolutePath)}`}>
             {parent.frontmatter.title}
           </Link>
         </li>
 
-        {pages.map(node => (
-          <li key={node.id}>
-            <Link to={`/${urlFromPath(parent.fileAbsolutePath)}/${urlFromPath(node.fileAbsolutePath)}`}>
-              {node.frontmatter.title}
+        {pages.map(link => (
+          <li key={link.id}>
+            <Link to={pageUrl(parent.fileAbsolutePath, link.fileAbsolutePath)}>
+              {link.frontmatter.title}
             </Link>
           </li>
         ))}
@@ -27,7 +31,7 @@ const SeriesPage = ({ parent, pages, children }) => {
       <Link to="part-1">
         Begin Reading ›
       </Link>
-    </div>
+    </>
   )
 }
 

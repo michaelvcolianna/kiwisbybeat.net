@@ -3,16 +3,31 @@ import { Link } from 'gatsby'
 
 import urlFromPath from '@components/url-from-path'
 
+const PageLink = (href, label) => {
+  return (
+    <li>
+      {href
+        ? <Link to={href}>{label}</Link>
+        : <span>{label}</span>
+      }
+    </li>
+  )
+}
+
 const ComicPage = ({ parent, pagePath, pageNav, children }) => {
-  const edge = pageNav.filter(nav => {
+  const edge = pageNav.find(nav => {
     return nav.node.fileAbsolutePath === pagePath
   })
 
-  const previous = edge[0].previous ?? null
-  const next = edge[0].next ?? null
+  const previous = edge.previous
+    ? `../${urlFromPath(edge.previous.fileAbsolutePath)}`
+    : null
+  const next = edge.next
+    ? `../${urlFromPath(edge.next.fileAbsolutePath)}`
+    : null
 
   return (
-    <div>
+    <>
       <Link to={`/${urlFromPath(parent.fileAbsolutePath)}`}>
         ^ Back to {parent.frontmatter.title}
       </Link>
@@ -20,21 +35,10 @@ const ComicPage = ({ parent, pagePath, pageNav, children }) => {
       {children}
 
       <ul>
-        <li>
-          {previous
-            ? <Link to={`../${urlFromPath(previous.fileAbsolutePath)}`}>‹ Previous</Link>
-            : <span>‹ Previous</span>
-          }
-        </li>
-
-        <li>
-          {next
-            ? <Link to={`../${urlFromPath(next.fileAbsolutePath)}`}>Next ›</Link>
-            : <span>Next ›</span>
-          }
-        </li>
+        <PageLink href={previous} label="‹ Previous" />
+        <PageLink href={next} label="Next ›" />
       </ul>
-    </div>
+    </>
   )
 }
 

@@ -1,12 +1,13 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
+
+import SkipLink from '@components/skip-link'
+import Header from '@components/header'
+import Footer from '@components/footer'
 
 import HomePage from '@components/home-page'
 import SeriesPage from '@components/series-page'
 import ComicPage from '@components/comic-page'
-
-import ExternalLink from '@components/external-link'
-import urlFromPath from '@components/url-from-path'
 
 const Components = {
   home: HomePage,
@@ -38,21 +39,9 @@ const PageTemplate = ({
 
   return (
     <>
-      <header>
-        <Link to="/">
-          Kiwis by Beat!
-        </Link>
+      <SkipLink />
 
-        <ul>
-          {tableOfContents.map(node => (
-            <li key={node.id}>
-              <Link to={`/${urlFromPath(node.fileAbsolutePath)}`}>
-                {node.frontmatter.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </header>
+      <Header navLinks={tableOfContents} />
 
       <main id="content">
         <LayoutComponent
@@ -66,15 +55,7 @@ const PageTemplate = ({
         </LayoutComponent>
       </main>
 
-      <footer>
-        Comics © 2003-2015 by <ExternalLink href="https://en.wikipedia.org/wiki/Ryan_Armand">Ryan Armand</ExternalLink>.
-        <br />
-        Site 2019-{new Date().getFullYear()} by <ExternalLink href="https://github.com/michaelvcolianna">MVC</ExternalLink>.
-      </footer>
-
-      <div hidden>
-        <span id="label-external">Opens in a new window/tab</span>
-      </div>
+      <Footer />
     </>
   )
 }
