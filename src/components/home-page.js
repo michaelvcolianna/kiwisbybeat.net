@@ -7,17 +7,17 @@ import ExternalLink from '@components/external-link'
 const HomePage = ({ body }) => {
   return (
     <>
-      <h1>Kiwis by Beat!</h1>
+      <section>
+        <h1>Kiwis by Beat!</h1>
 
-      <StaticImage
-        src="../images/website.jpg"
-        alt="
-          A manipulated screenshot of the old website's front page, with a list
-          of comics.
-        "
-      />
+        <StaticImage
+          src="../images/website.jpg"
+          alt="
+            A manipulated screenshot of the old website's front page, with a
+            list of comics.
+          "
+        />
 
-      <div>
         <p>
           <strong>If nothing else, please read <Link to="/minus">minus!</Link> and/or <Link to="/pelen-purul">The Mildly Inconvenient Journey of Pelen Purul</Link>.
           All of Ryan’s comics are great but those two are truly phenomenal.</strong>
@@ -43,11 +43,13 @@ const HomePage = ({ body }) => {
           If you're able to contribute some, please reach out!
           Any help is appreciated!
         </p>
-      </div>
+      </section>
 
-      <h3>News</h3>
+      <section>
+        <h3>News</h3>
 
-      <div dangerouslySetInnerHTML={{ __html: body }} />
+        <div dangerouslySetInnerHTML={{ __html: body }} />
+      </section>
     </>
   )
 }

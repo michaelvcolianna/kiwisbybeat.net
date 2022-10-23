@@ -15,7 +15,7 @@ const PageLink = ({ href, label }) => {
   )
 }
 
-const ComicPage = ({ title, body, parent, pagePath, pageNav, children }) => {
+const ComicPage = ({ title, body, parent, pagePath, pageNav }) => {
   // Get the edge for this page
   const edge = pageNav.find(nav => {
     return nav.node.fileAbsolutePath === pagePath
@@ -31,20 +31,24 @@ const ComicPage = ({ title, body, parent, pagePath, pageNav, children }) => {
 
   return (
     <>
-      <Link to={`/${urlFromPath(parent.fileAbsolutePath)}`}>
-        ^ Back to {parent.frontmatter.title}
-      </Link>
+      <section>
+        <Link to={`/${urlFromPath(parent.fileAbsolutePath)}`}>
+          ^ Back to {parent.frontmatter.title}
+        </Link>
 
-      <h1>{title}</h1>
+        <h1>{parent.frontmatter.title}: {title}</h1>
 
-      <p><em>@todo Adjust layout when implementing design.</em></p>
+        <div dangerouslySetInnerHTML={{ __html: body }} />
+      </section>
 
-      <div dangerouslySetInnerHTML={{ __html: body }} />
+      <nav aria-labelledby="label-pages-nav">
+        <span id="label-pages-nav">{parent.frontmatter.title} pages</span>
 
-      <ul>
-        <PageLink href={previous} label="‹ Previous" />
-        <PageLink href={next} label="Next ›" />
-      </ul>
+        <ul>
+          <PageLink href={previous} label="‹ Previous" />
+          <PageLink href={next} label="Next ›" />
+        </ul>
+      </nav>
     </>
   )
 }

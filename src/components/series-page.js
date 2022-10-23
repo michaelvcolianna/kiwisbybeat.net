@@ -14,34 +14,40 @@ const pageUrl = (parent, child) => {
   return `/${urlFromPath(parent)}/${urlFromPath(child)}`
 }
 
-const SeriesPage = ({ title, body, parent, pages, children }) => {
+const SeriesPage = ({ title, body, parent, pages }) => {
   return (
     <>
-      <ul>
-        <li>
-          <Link to={`/${urlFromPath(parent.fileAbsolutePath)}`}>
-            {parent.frontmatter.title}
-          </Link>
-        </li>
+      <nav aria-labelledby="label-comics-nav">
+        <span id="label-comics-nav">{parent.frontmatter.title} pages</span>
 
-        {pages.map(link => (
-          <li key={link.id}>
-            <Link to={pageUrl(parent.fileAbsolutePath, link.fileAbsolutePath)}>
-              {link.frontmatter.title}
+        <ul>
+          <li>
+            <Link to={`/${urlFromPath(parent.fileAbsolutePath)}`}>
+              {parent.frontmatter.title}
             </Link>
           </li>
-        ))}
-      </ul>
 
-      <h1>{title}</h1>
+          {pages.map(link => (
+            <li key={link.id}>
+              <Link to={pageUrl(parent.fileAbsolutePath, link.fileAbsolutePath)}>
+                {link.frontmatter.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
-      <p><em>@todo Adjust layout when implementing design.</em></p>
+      <section>
+        <h1>{title}</h1>
 
-      <div dangerouslySetInnerHTML={{ __html: body }} />
+        <div dangerouslySetInnerHTML={{ __html: body }} />
 
-      <Link to="part-1">
-        Begin Reading ›
-      </Link>
+        <div>
+          <Link to="part-1">
+            Begin Reading ›
+          </Link>
+        </div>
+      </section>
     </>
   )
 }
