@@ -15,7 +15,7 @@ const PageLink = ({ href, label }) => {
   )
 }
 
-const ComicPage = ({ parent, pagePath, pageNav, children }) => {
+const ComicPage = ({ title, body, parent, pagePath, pageNav, children }) => {
   // Get the edge for this page
   const edge = pageNav.find(nav => {
     return nav.node.fileAbsolutePath === pagePath
@@ -35,7 +35,11 @@ const ComicPage = ({ parent, pagePath, pageNav, children }) => {
         ^ Back to {parent.frontmatter.title}
       </Link>
 
-      {children}
+      <h1>{title}</h1>
+
+      <p><em>@todo Adjust layout when implementing design.</em></p>
+
+      <div dangerouslySetInnerHTML={{ __html: body }} />
 
       <ul>
         <PageLink href={previous} label="‹ Previous" />

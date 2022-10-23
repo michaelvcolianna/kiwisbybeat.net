@@ -46,14 +46,13 @@ const PageTemplate = ({
 
       <main id="content">
         <LayoutComponent
+          title={frontmatter.title}
+          body={html}
           parent={parent}
           pages={pages}
           pagePath={pagePath}
           pageNav={pageNav}
-        >
-          <h1>{frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-        </LayoutComponent>
+        />
       </main>
 
       <Footer />

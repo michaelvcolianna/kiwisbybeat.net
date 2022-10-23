@@ -14,7 +14,7 @@ const pageUrl = (parent, child) => {
   return `/${urlFromPath(parent)}/${urlFromPath(child)}`
 }
 
-const SeriesPage = ({ parent, pages, children }) => {
+const SeriesPage = ({ title, body, parent, pages, children }) => {
   return (
     <>
       <ul>
@@ -33,7 +33,11 @@ const SeriesPage = ({ parent, pages, children }) => {
         ))}
       </ul>
 
-      {children}
+      <h1>{title}</h1>
+
+      <p><em>@todo Adjust layout when implementing design.</em></p>
+
+      <div dangerouslySetInnerHTML={{ __html: body }} />
 
       <Link to="part-1">
         Begin Reading ›
