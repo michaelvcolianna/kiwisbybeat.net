@@ -7,6 +7,12 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
     {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        additionalData: `@import "${__dirname}/src/styles/mixins";`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         'icon': 'src/images/minus.png'

@@ -9,6 +9,8 @@ import HomePage from '@components/home-page'
 import SeriesPage from '@components/series-page'
 import ComicPage from '@components/comic-page'
 
+import '@styles/global.scss'
+
 // Dynamic resolver for LayoutContainer component
 const Components = {
   home: HomePage,
@@ -85,6 +87,7 @@ export const query = graphql`
         id
         fileAbsolutePath
         frontmatter {
+          menu
           title
         }
       }

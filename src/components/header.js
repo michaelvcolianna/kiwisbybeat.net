@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 
 import urlFromPath from '@components/url-from-path'
 
+import * as styles from './header.module.scss'
+
 const Header = ({ navLinks }) => {
   const [navOpen, setNavOpen] = useState(false)
 
@@ -43,29 +45,36 @@ const Header = ({ navLinks }) => {
   }, [navOpen])
 
   return (
-    <header>
-      <a href="/">
+    <header className={styles.siteHeader}>
+      <a href="/" className={styles.branding}>
         Kiwis by Beat!
       </a>
 
-      <nav aria-labelledby="label-series-nav" ref={menuNode}>
+      <nav
+        aria-labelledby="label-series-nav"
+        ref={menuNode}
+        className={`${styles.menu} ${navOpen ? styles.menuOpen : ''}`}
+      >
         <button
           aria-haspopup="true"
           id="label-series-nav"
           onClick={toggleMenu}
+          className={styles.toggleButton}
         >
           Comics menu
         </button>
 
-        <ul aria-hidden={!navOpen}>
-          {navLinks.map(link => (
-            <li key={link.id}>
-              <Link to={`/${urlFromPath(link.fileAbsolutePath)}`}>
-                {link.frontmatter.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div aria-hidden={!navOpen}>
+          <ul>
+            {navLinks.map(link => (
+              <li key={link.id}>
+                <Link to={`/${urlFromPath(link.fileAbsolutePath)}`}>
+                  {link.frontmatter.menu || link.frontmatter.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
     </header>
   )
