@@ -7,3 +7,17 @@
   color: var(--color-dimmed);
   font-size: 0.825rem;
 }
+
+.news {
+  border-top: 1px solid var(--color-accent);
+  padding-top: 1rem;
+
+  ul {
+    list-style-type: circle;
+    margin: 0;
+  }
+
+  li {
+    margin: 0.5rem 0;
+  }
+}

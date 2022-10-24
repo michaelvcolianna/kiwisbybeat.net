@@ -18,3 +18,13 @@
   gap: 1rem;
   grid-template-columns: 1fr;
 }
+
+// Responsive
+@mixin bp($size, $reverse: false) {
+  $measure: if($reverse, 'max-width', 'min-width');
+  $width: if($reverse, $size - 1, $size);
+
+  @media(#{$measure}: $width) {
+    @content;
+  }
+}

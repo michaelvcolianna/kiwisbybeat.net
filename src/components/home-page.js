@@ -53,7 +53,7 @@ const HomePage = ({ body }) => {
         </p>
       </section>
 
-      <section>
+      <section className={styles.news}>
         <h3>News</h3>
 
         <div dangerouslySetInnerHTML={{ __html: body }} />
