@@ -10,6 +10,7 @@
   position: fixed;
   text-decoration: none;
   top: -10rem;
+  z-index: 3;
 
   &:focus {
     top: 1rem;

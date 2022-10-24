@@ -2,16 +2,20 @@
   display: grid;
   gap: 0.5rem;
   grid-template-columns: 1fr 2rem;
-  padding: 0.5rem;
 }
 
 .branding {
-  color: var(--color-foreground);
-  font-family: var(--font-kiwis);
-  font-size: 2rem;
+  align-items: flex-end;
+  display: flex;
   position: relative;
-  text-decoration: none;
   z-index: 2;
+
+  a {
+    color: var(--color-foreground);
+    font-family: var(--font-kiwis);
+    font-size: 2rem;
+    text-decoration: none;
+  }
 }
 
 .toggle-button {
@@ -21,7 +25,6 @@
   background-color: var(--color-background);
   border: 0;
   color: var(--color-foreground);
-  font-size: 0;
   height: 2rem;
   padding: 0;
   position: relative;
@@ -36,6 +39,11 @@
     left: calc(50% - 0.5rem);
     position: absolute;
     width: 1rem;
+
+    @include motion {
+      transition: top 195ms ease-in-out,
+                  transform 195ms ease-in-out;
+    }
   }
 
   &::after {
@@ -52,10 +60,10 @@
 
   div {
     background-color: var(--color-background);
-    bottom: 0;
+    box-shadow: 0 0 3px var(--color-shadow);
     left: 0;
     opacity: 0;
-    padding: 3.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 4rem 1rem 1rem 1rem;
     position: fixed;
     right: 0;
     top: 0;

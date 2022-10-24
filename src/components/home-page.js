@@ -4,11 +4,13 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import ExternalLink from '@components/external-link'
 
+import * as styles from './home-page.module.scss'
+
 const HomePage = ({ body }) => {
   return (
     <>
       <section>
-        <h1>Kiwis by Beat!</h1>
+        <h1 className="sr-only">Kiwis by Beat!</h1>
 
         <StaticImage
           src="../images/website.jpg"
@@ -16,7 +18,13 @@ const HomePage = ({ body }) => {
             A manipulated screenshot of the old website's front page, with a
             list of comics.
           "
+          className={styles.oldSiteImage}
         />
+
+        <p className={styles.leadSmall}>
+          The image above is what the original Kiwis by Beat! website used to
+          look like, from around 2014 or so.
+        </p>
 
         <p>
           <strong>If nothing else, please read <Link to="/minus">minus!</Link> and/or <Link to="/pelen-purul">The Mildly Inconvenient Journey of Pelen Purul</Link>.

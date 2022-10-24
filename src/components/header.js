@@ -46,9 +46,11 @@ const Header = ({ navLinks }) => {
 
   return (
     <header className={styles.siteHeader}>
-      <a href="/" className={styles.branding}>
-        Kiwis by Beat!
-      </a>
+      <span className={styles.branding}>
+        <a href="/">
+          Kiwis by Beat!
+        </a>
+      </span>
 
       <nav
         aria-labelledby="label-series-nav"
@@ -61,7 +63,7 @@ const Header = ({ navLinks }) => {
           onClick={toggleMenu}
           className={styles.toggleButton}
         >
-          Comics menu
+          <span className="sr-only">Comics menu</span>
         </button>
 
         <div aria-hidden={!navOpen}>

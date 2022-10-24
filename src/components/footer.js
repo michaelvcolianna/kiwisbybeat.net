@@ -2,13 +2,15 @@ import * as React from 'react'
 
 import ExternalLink from '@components/external-link'
 
+import * as styles from './footer.module.scss'
+
 const Footer = () => {
   return (
     <>
-      <footer>
-        Comics © 2003-2015 by <ExternalLink href="https://en.wikipedia.org/wiki/Ryan_Armand">Ryan Armand</ExternalLink>.
+      <footer className={styles.siteFooter}>
+        <span>Comics © 2003-2015 by <ExternalLink href="https://en.wikipedia.org/wiki/Ryan_Armand">Ryan Armand</ExternalLink></span>
         <br />
-        Site 2019-{new Date().getFullYear()} by <ExternalLink href="https://github.com/michaelvcolianna">MVC</ExternalLink>.
+        <span>Site 2019-{new Date().getFullYear()} by <ExternalLink href="https://github.com/michaelvcolianna">MVC</ExternalLink></span>
       </footer>
 
       <div hidden>
