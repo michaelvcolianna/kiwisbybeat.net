@@ -2,7 +2,7 @@
   @include marginizer;
   color: var(--color-dimmed);
   font-size: 0.825rem;
-  padding: 3rem 1rem;
+  padding: 3rem 0;
   text-align: center;
 
   br {
@@ -12,6 +12,5 @@
   a {
     color: var(--color-foreground);
     font-weight: bold;
-    text-decoration: none;
   }
 }

@@ -22,7 +22,7 @@ module.exports = {
       resolve: 'gatsby-plugin-sharp',
       options: {
         defaults: {
-          formats: ['auto', 'webp', 'avif'],
+          formats: ['auto', 'webp'],
           placeholder: 'tracedSVG'
         }
       }
@@ -36,8 +36,7 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               linkImagesToOriginal: false,
-              withWebp: true,
-              withAvif: true
+              withWebp: true
             }
           }
         ]

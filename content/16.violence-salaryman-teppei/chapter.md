@@ -1,5 +1,6 @@
 ---
 title: 'TEPPEI!'
+cover: cover-teppei.jpg
 ---
 
 ![](t1.jpg "Ryan's cover for VIOLENCE SALARYMAN TEPPEI, featuring the main character.")

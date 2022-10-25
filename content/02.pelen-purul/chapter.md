@@ -1,9 +1,7 @@
 ---
 title: 'The Mildly Inconvenient Journey of Pelen Purul'
-
-
 menu: 'Pelen Purul'
-slug: pelen-purul
+cover: cover-pelen.jpg
 ---
 
 #### The Mildly Inconvenient Journey of Pelen Purul

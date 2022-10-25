@@ -1,5 +1,6 @@
 ---
 title: Socks
+cover: cover-socks.jpg
 ---
 
 ![](sockslogo.jpg "Ryan's cover for Socks, featuring people crossing a street.")

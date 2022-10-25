@@ -1,5 +1,6 @@
 ---
 title: Shell
+cover: cover-shell.jpg
 ---
 
 #### Shell

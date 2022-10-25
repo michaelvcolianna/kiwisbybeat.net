@@ -14,7 +14,8 @@ const Footer = () => {
       </footer>
 
       <div hidden>
-        <span id="label-external">Opens in a new window/tab</span>
+        <span id="label-external">Opens an external site</span>
+        {`<!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->`}
       </div>
     </>
   )

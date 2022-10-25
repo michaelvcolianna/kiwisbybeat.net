@@ -1,11 +1,6 @@
 ---
 title: minus!
-media_order: minuscover.jpg
-taxonomy:
-    category:
-        - docs
-    tag:
-        - main
+cover: cover-minus.jpg
 ---
 
 #### minus!

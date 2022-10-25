@@ -1,5 +1,6 @@
 ---
 title: 'Ribald Youth'
+cover: cover-ribald.jpg
 ---
 
 ![](logo.jpg "Ryan's title for Ribald Youth")

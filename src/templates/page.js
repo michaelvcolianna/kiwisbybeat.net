@@ -51,6 +51,7 @@ const PageTemplate = ({
           title={frontmatter.title}
           body={html}
           parent={parent}
+          toc={tableOfContents}
           pages={pages}
           pagePath={pagePath}
           pageNav={pageNav}
@@ -89,6 +90,11 @@ export const query = graphql`
         frontmatter {
           menu
           title
+          cover {
+            childImageSharp {
+              gatsbyImageData(placeholder: TRACED_SVG)
+            }
+          }
         }
       }
     }

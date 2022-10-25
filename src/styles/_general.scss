@@ -2,29 +2,26 @@
   --color-background: rgb(254, 254, 250);
   --color-foreground: rgb(29, 32, 31);
   --color-dimmed: rgb(92, 87, 87);
-  --color-accent: rgb(204, 198, 200);
+  --color-presentational: rgb(221, 221, 221);
   --color-link: rgb(0, 65, 106);
   --font-body: 'Inter', sans-serif;
   --font-kiwis: 'Busorama ITC Std', display;
 }
 
 html {
-  font-size: 18px;
+  font-size: clamp(1rem, 4vw, 2rem);
 }
 
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-body);
-  margin: 0;
+  line-height: 1.5;
+  margin: 0 auto;
   padding: 1rem;
 }
 
 #content {
-  @include marginizer;
-  line-height: 1.25;
-  padding-top: 2rem;
-
   a {
     color: var(--color-link);
   }
@@ -37,10 +34,6 @@ body {
   h6,
   p {
     margin: 0;
-  }
-
-  section {
-    @include marginizer;
   }
 }
 

@@ -1,5 +1,6 @@
 ---
 title: 'Modern Fried Snake'
+cover: cover-snake.jpg
 ---
 
 ![](moderntitle.jpg "Ryan's title for Modern Fried Snake.")

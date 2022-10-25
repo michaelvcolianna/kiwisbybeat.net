@@ -1,5 +1,6 @@
 ---
 title: Fist!
+cover: cover-fist.jpg
 ---
 
 #### Fist!

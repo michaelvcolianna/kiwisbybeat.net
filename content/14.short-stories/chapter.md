@@ -1,5 +1,6 @@
 ---
 title: 'Short Stories'
+cover: cover-shorts.jpg
 ---
 
 #### Short Stories

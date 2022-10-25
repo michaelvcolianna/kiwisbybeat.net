@@ -46,11 +46,9 @@ const Header = ({ navLinks }) => {
 
   return (
     <header className={styles.siteHeader}>
-      <span className={styles.branding}>
-        <a href="/">
-          Kiwis by Beat!
-        </a>
-      </span>
+      <a href="/" className={styles.branding}>
+        Kiwis by Beat!
+      </a>
 
       <nav
         aria-labelledby="label-series-nav"

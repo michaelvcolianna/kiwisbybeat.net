@@ -1,23 +1,58 @@
-.old-site-image {
-  margin: auto;
-  max-width: 646px;
+.lead-big {
+  display: grid;
+  font-size: 2rem;
+  letter-spacing: -0.0125rem;
+  line-height: 1.15;
+  padding-top: 5vh;
+  padding-bottom: 45vh;
+
+  @include bp(768px) {
+    font-size: 1.5rem;
+  }
+
+  a {
+    align-items: center;
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    @include bp(768px) {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
 }
 
-.lead-small {
-  color: var(--color-dimmed);
-  font-size: 0.825rem;
+.comics {
+  @include marginizer;
+
+  ul {
+    @include marginizer(3rem);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include bp(768px) {
+      gap: 3rem 1rem;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.about {
+  @include marginizer;
+  padding-top: 10vh;
 }
 
 .news {
-  border-top: 1px solid var(--color-accent);
-  padding-top: 1rem;
+  padding-top: 15vh;
 
   ul {
-    list-style-type: circle;
-    margin: 0;
-  }
-
-  li {
-    margin: 0.5rem 0;
+    @include marginizer;
+    padding: 0 2rem;
   }
 }

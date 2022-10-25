@@ -13,9 +13,9 @@
 }
 
 // I use this a lot
-@mixin marginizer {
+@mixin marginizer($gap: 1rem) {
   display: grid;
-  gap: 1rem;
+  gap: $gap;
   grid-template-columns: 1fr;
 }
 
@@ -27,4 +27,9 @@
   @media(#{$measure}: $width) {
     @content;
   }
+}
+
+// Transitions
+@function tx($speed: 195ms, $timing: ease-in-out) {
+  @return #{$speed} #{$timing};
 }

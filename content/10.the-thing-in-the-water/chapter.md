@@ -1,5 +1,6 @@
 ---
 title: 'The Thing in the Water'
+cover: cover-thing.jpg
 ---
 
 #### The Thing in the Water

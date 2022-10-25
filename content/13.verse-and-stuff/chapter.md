@@ -1,5 +1,6 @@
 ---
 title: 'Verse & Stuff'
+cover: cover-verse.jpg
 ---
 
 #### Verse & Stuff

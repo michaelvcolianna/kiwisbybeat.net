@@ -1,5 +1,6 @@
 ---
 title: 'People Comics'
+cover: cover-people.jpg
 ---
 
 #### People Comics

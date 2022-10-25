@@ -1,5 +1,6 @@
 ---
 title: '2006 Comic Revue'
+cover: cover-revue.jpg
 ---
 
 ![](crlogo.jpg "Ryan's logo for the 2006 Comic Revue.")

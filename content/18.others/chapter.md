@@ -1,5 +1,6 @@
 ---
 title: 'Other Comics'
+cover: cover-other.jpg
 ---
 
 #### Other Comics

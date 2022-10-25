@@ -1,5 +1,6 @@
 ---
 title: 'A Vampire Story'
+cover: cover-vampire.jpg
 ---
 
 ![](vamptitle.jpg "Ryan's cover for A Vampire Story, featuring the faces of several characters.")

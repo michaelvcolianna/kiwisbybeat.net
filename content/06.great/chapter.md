@@ -1,5 +1,6 @@
 ---
 title: Great!
+cover: cover-great.jpg
 ---
 
 ![](greatlogo.jpg "Ryan's cover for Great!, featuring the main character at the bar.")
