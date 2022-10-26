@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 
 import urlFromPath from '@components/url-from-path'
 
+import * as styles from './series-page.module.scss'
+
 /**
  * Make a URL for a comic page.
  *
@@ -14,40 +16,48 @@ const pageUrl = (parent, child) => {
   return `/${urlFromPath(parent)}/${urlFromPath(child)}`
 }
 
-const SeriesPage = ({ title, body, parent, pages }) => {
+const SeriesPage = ({ frontmatter, body, parent, pages }) => {
+  const { title, group } = frontmatter
+
   return (
     <>
-      <nav aria-labelledby="label-comics-nav">
-        <span id="label-comics-nav">{parent.frontmatter.title} pages</span>
-
-        <ul>
-          <li>
-            <Link to={`/${urlFromPath(parent.fileAbsolutePath)}`}>
-              {parent.frontmatter.title}
-            </Link>
-          </li>
-
-          {pages.map(link => (
-            <li key={link.id}>
-              <Link to={pageUrl(parent.fileAbsolutePath, link.fileAbsolutePath)}>
-                {link.frontmatter.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
-      <section>
+      <article className={styles.seriesBlock}>
         <h1>{title}</h1>
 
-        <div dangerouslySetInnerHTML={{ __html: body }} />
+        <div
+          className={styles.seriesMd}
+          dangerouslySetInnerHTML={{ __html: body }}
+        />
 
-        <div>
-          <Link to="part-1">
-            Begin Reading ›
-          </Link>
+        <div className={styles.seriesPages}>
+          <p>This {group ? 'series' : 'comic'} has {pages.length} pages.</p>
+
+          {group
+            ? (
+            <nav aria-labelledby="label-comics-nav">
+              <span className="sr-only" id="label-comics-nav">
+                {parent.frontmatter.title} pages
+              </span>
+
+              <ul>
+                {pages.map(link => (
+                  <li key={link.id}>
+                    <Link to={pageUrl(parent.fileAbsolutePath, link.fileAbsolutePath)}>
+                      {link.frontmatter.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            )
+            : (
+            <Link to="part-1" className={styles.readLink}>
+              Begin Reading ›
+            </Link>
+            )
+          }
         </div>
-      </section>
+      </article>
     </>
   )
 }

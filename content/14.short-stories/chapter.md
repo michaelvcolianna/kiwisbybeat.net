@@ -1,9 +1,8 @@
 ---
 title: 'Short Stories'
 cover: cover-shorts.jpg
+group: true
 ---
-
-#### Short Stories
 
 ![](shorttitle.jpg "A compilation of banners for the Short Stories comics.")
 

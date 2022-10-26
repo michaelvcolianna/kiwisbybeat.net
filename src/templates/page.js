@@ -48,12 +48,12 @@ const PageTemplate = ({
 
       <main id="content">
         <LayoutComponent
-          title={frontmatter.title}
+          pagePath={pagePath}
+          frontmatter={frontmatter}
           body={html}
           parent={parent}
           toc={tableOfContents}
           pages={pages}
-          pagePath={pagePath}
           pageNav={pageNav}
         />
       </main>
@@ -70,6 +70,7 @@ export const query = graphql`
       pagePath: fileAbsolutePath
       frontmatter {
         title
+        group
       }
       html
     }

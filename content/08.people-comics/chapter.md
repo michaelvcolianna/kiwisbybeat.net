@@ -1,9 +1,8 @@
 ---
 title: 'People Comics'
 cover: cover-people.jpg
+group: true
 ---
-
-#### People Comics
 
 ![](peopletitle.jpg "A compilation of various callouts for People Comics.")
 

@@ -2,8 +2,6 @@
 title: 'Let''s Beginning'
 ---
 
-##### Book One: Doing fine
-
 ![](pg0.jpg)
 ![](pg1.jpg)
 ![](pg2.jpg)

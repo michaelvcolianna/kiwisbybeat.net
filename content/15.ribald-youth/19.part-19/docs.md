@@ -2,8 +2,6 @@
 title: 'Make it the top!'
 ---
 
-##### Book Two: Girls be ambitious.
-
 ![](pg216.jpg)
 ![](pg217.jpg)
 ![](pg218.jpg)

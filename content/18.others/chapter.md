@@ -1,9 +1,8 @@
 ---
 title: 'Other Comics'
 cover: cover-other.jpg
+group: true
 ---
-
-#### Other Comics
 
 ![](othertitle.jpg "A compilation of icons for some hidden/incomplete comics.")
 

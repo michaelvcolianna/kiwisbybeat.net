@@ -12,12 +12,14 @@ const Card = ({ comic }) => {
       to={`/${urlFromPath(comic.fileAbsolutePath)}`}
       className={styles.card}
     >
-      <GatsbyImage
-        image={comic.frontmatter.cover.childImageSharp.gatsbyImageData}
-        alt=""
-      />
+      <article>
+        <GatsbyImage
+          image={comic.frontmatter.cover.childImageSharp.gatsbyImageData}
+          alt=""
+        />
 
-      <span>{comic.frontmatter.title}</span>
+        <h2>{comic.frontmatter.title}</h2>
+      </article>
     </Link>
   )
 }

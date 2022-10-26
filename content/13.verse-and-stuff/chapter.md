@@ -1,9 +1,8 @@
 ---
 title: 'Verse & Stuff'
 cover: cover-verse.jpg
+group: true
 ---
-
-#### Verse & Stuff
 
 ![](versetitle.jpg "A compilation of icons for the Verse and Stuff comics.")
 

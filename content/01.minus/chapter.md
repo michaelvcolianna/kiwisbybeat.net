@@ -3,8 +3,6 @@ title: minus!
 cover: cover-minus.jpg
 ---
 
-#### minus!
-
 ![](minuscover.jpg "A compilation of various callouts for minus.")
 
 Ryan's notes from this series:
