@@ -1,9 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: 'Kiwis by Beat!',
-    siteUrl: 'https://kiwisbybeat.net'
+    description: 'A reimagining of the Kiwis by Beat! web site by Ryan Armand.',
+    image: '/kiwishare.jpg',
+    siteUrl: process.env.NODE_ENV === 'production'
+      ? 'https://kiwisbybeat.net'
+      : 'http://localhost:8000'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
     {
@@ -23,7 +28,7 @@ module.exports = {
       options: {
         defaults: {
           formats: ['auto', 'webp'],
-          placeholder: 'tracedSVG'
+          placeholder: 'blurred'
         }
       }
     },

@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import Seo from '@components/seo'
+
 import SkipLink from '@components/skip-link'
 import Header from '@components/header'
 import Footer from '@components/footer'
@@ -8,6 +10,9 @@ import Footer from '@components/footer'
 import HomePage from '@components/home-page'
 import SeriesPage from '@components/series-page'
 import ComicPage from '@components/comic-page'
+
+import pageUrl from '@components/page-url'
+import urlFromPath from '@components/url-from-path'
 
 import '@styles/global.scss'
 
@@ -40,8 +45,30 @@ const PageTemplate = ({
 }) => {
   const LayoutComponent = Components[pageType]
 
+  let description, title, url
+  let image = frontmatter.cover ? frontmatter.cover.publicUrl : null
+
+  if(pageType === 'chapter') {
+    description = frontmatter.description || `The ${frontmatter.title} series on Kiwis by Beat!`
+    title = frontmatter.title
+    url = urlFromPath(pagePath)
+  }
+
+  if(pageType === 'docs') {
+    description = `${frontmatter.title} of the ${parent.frontmatter.title} series on Kiwis by Beat!`
+    title = `${parent.frontmatter.title} – ${frontmatter.title}`
+    url = pageUrl(parent.fileAbsolutePath, pagePath)
+  }
+
   return (
     <>
+      <Seo
+        customTitle={title}
+        customDescription={description}
+        customUrl={url}
+        customImage={image}
+      />
+
       <SkipLink />
 
       <Header navLinks={tableOfContents} />
@@ -71,6 +98,9 @@ export const query = graphql`
       frontmatter {
         title
         group
+        cover {
+          publicURL
+        }
       }
       html
     }
@@ -93,7 +123,7 @@ export const query = graphql`
           title
           cover {
             childImageSharp {
-              gatsbyImageData(placeholder: TRACED_SVG)
+              gatsbyImageData(placeholder: BLURRED)
             }
           }
         }
