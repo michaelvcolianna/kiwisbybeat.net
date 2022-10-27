@@ -6,6 +6,27 @@
   --color-link: rgb(0, 65, 106);
   --font-body: 'Inter', sans-serif;
   --font-kiwis: 'Busorama ITC Std', display;
+  --width-main: none;
+
+  @include bp(480px) {
+    --width-main: 90%;
+  }
+
+  @include bp(768px) {
+    --width-main: 640px;
+  }
+
+  @include bp(1024px) {
+    --width-main: 992px;
+  }
+
+  @include bp(1200px) {
+    --width-main: 1120px;
+  }
+
+  @include bp(1440px) {
+    --width-main: 75%;
+  }
 }
 
 html {
@@ -33,6 +54,11 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+main {
+  margin: auto;
+  max-width: var(--width-main);
 }
 
 .sr-only {
