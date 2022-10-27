@@ -13,10 +13,10 @@ const HomePage = ({ toc, body }) => {
         <h1 className="sr-only">Kiwis by Beat!</h1>
 
         <p className={styles.leadBig}>
-          A reimagining of the Kiwis by Beat! web site by Ryan Armand.
+          A reimagining of the Kiwis by Beat! web site by <span className={styles.ryanArmand}>Ryan Armand.</span>
 
           <a href="#about">
-            More
+            About
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1" width="1"><path fill="currentColor" d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
           </a>
 
@@ -59,6 +59,13 @@ const HomePage = ({ toc, body }) => {
         <p>
           <strong>If nothing else, please read <Link to="/minus">minus!</Link> and/or <Link to="/pelen-purul">The Mildly Inconvenient Journey of Pelen Purul</Link>.
           All of Ryan’s comics are great but those two are truly phenomenal.</strong>
+        </p>
+
+        <p>
+          This page has direct links to the comics, featuring some cards I put together for them, and there is a menu to access them from anywhere, too.
+          Each comic has a button to begin reading.
+          If it's a series, then there are multiple buttons with the names of each portion.
+          When you're going through the pages, the previous &amp; next buttons are at the bottom, along with a full list of all the pages.
         </p>
 
         <p>

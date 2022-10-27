@@ -1,6 +1,6 @@
 ---
 title: EXTRA!
-media_order: 'minus-e1.jpg,minus-e2.jpg,me3a.jpg,me3b.jpg,me3c.jpg,me3d.jpg,me3e.jpg,mnus1.gif,mnus2.gif,mnus3.gif,mnus4.gif,mnus5.gif,mnus6.gif,mnus7.gif,mnus8.gif,mnus9.gif,mus1.gif,mus2.gif,mus3.gif,mus4.gif,mus5.gif'
+media_order: 'minus-e1.jpg,minus-e2.jpg,me3a.jpg,me3b.jpg,me3c.jpg,me3d.jpg,me3e.jpg,mnus1.jpg,mnus2.jpg,mnus3.jpg,mnus4.jpg,mnus5.jpg,mnus6.jpg,mnus7.jpg,mnus8.jpg,mnus9.jpg,mus1.jpg,mus2.jpg,mus3.jpg,mus4.jpg,mus5.jpg'
 taxonomy:
     category:
         - docs
@@ -17,17 +17,17 @@ These were located in the folder with the other minus! images.
 ![](me3c.jpg)
 ![](me3d.jpg)
 ![](me3e.jpg)
-![](mnus1.gif)
-![](mnus2.gif)
-![](mnus3.gif)
-![](mnus4.gif)
-![](mnus5.gif)
-![](mnus6.gif)
-![](mnus7.gif)
-![](mnus8.gif)
-![](mnus9.gif)
-![](mus1.gif)
-![](mus2.gif)
-![](mus3.gif)
-![](mus4.gif)
-![](mus5.gif)
+![](mnus1.jpg)
+![](mnus2.jpg)
+![](mnus3.jpg)
+![](mnus4.jpg)
+![](mnus5.jpg)
+![](mnus6.jpg)
+![](mnus7.jpg)
+![](mnus8.jpg)
+![](mnus9.jpg)
+![](mus1.jpg)
+![](mus2.jpg)
+![](mus3.jpg)
+![](mus4.jpg)
+![](mus5.jpg)

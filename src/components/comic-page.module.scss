@@ -57,7 +57,12 @@
 }
 
 .all-links {
-  text-align: center;
+  h3 {
+    align-items: center;
+    display: flex;
+    height: 3em;
+    justify-content: center;
+  }
 
   ul {
     display: table;

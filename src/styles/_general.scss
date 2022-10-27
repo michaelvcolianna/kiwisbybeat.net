@@ -29,7 +29,7 @@
   }
 
   @include bp(1440px) {
-    --size-copy: clamp(24px, 3vw - 1rem, 48px);
+    --size-copy: 24px;
     --width-main: 75%;
   }
 }
