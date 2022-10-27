@@ -58,6 +58,10 @@ const PageTemplate = ({
     description = `${frontmatter.title} of the ${parent.frontmatter.title} series on Kiwis by Beat!`
     title = `${parent.frontmatter.title} – ${frontmatter.title}`
     url = pageUrl(parent.fileAbsolutePath, pagePath)
+
+    if(parent.frontmatter.cover) {
+      image = parent.frontmatter.cover.publicURL
+    }
   }
 
   return (
@@ -109,6 +113,9 @@ export const query = graphql`
       fileAbsolutePath
       frontmatter {
         title
+        cover {
+          publicURL
+        }
       }
     }
     series: allMarkdownRemark(
