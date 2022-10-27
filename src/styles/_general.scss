@@ -6,13 +6,16 @@
   --color-link: rgb(0, 65, 106);
   --font-body: 'Inter', sans-serif;
   --font-kiwis: 'Busorama ITC Std', display;
+  --size-copy: 16px;
   --width-main: none;
 
   @include bp(480px) {
+    --size-copy: 18px;
     --width-main: 90%;
   }
 
   @include bp(768px) {
+    --size-copy: 20px;
     --width-main: 640px;
   }
 
@@ -21,16 +24,18 @@
   }
 
   @include bp(1200px) {
+    --size-copy: 22px;
     --width-main: 1120px;
   }
 
   @include bp(1440px) {
+    --size-copy: clamp(24px, 3vw - 1rem, 48px);
     --width-main: 75%;
   }
 }
 
 html {
-  font-size: clamp(1rem, 4vw, 2rem);
+  font-size: var(--size-copy);
 }
 
 body {

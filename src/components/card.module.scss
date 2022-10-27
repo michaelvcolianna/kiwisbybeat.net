@@ -2,9 +2,5 @@
   h2 {
     font-size: 1.5rem;
     font-weight: bold;
-
-    @include bp(768px) {
-      font-size: 0.75rem;
-    }
   }
 }
