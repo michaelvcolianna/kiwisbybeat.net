@@ -1,10 +1,27 @@
 .lead-big {
-  display: grid;
   font-size: 2rem;
   letter-spacing: -0.0125rem;
   line-height: 1.15;
   padding-top: 5vh;
   padding-bottom: 45vh;
+
+  strong,
+  em {
+    white-space: nowrap;
+  }
+
+  strong {
+    font-weight: normal;
+  }
+
+  em {
+    font-style: normal;
+  }
+
+  div {
+    display: flex;
+    gap: 2rem;
+  }
 
   a {
     align-items: center;
