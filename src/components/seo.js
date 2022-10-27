@@ -24,7 +24,7 @@ const Seo = ({ customTitle, customDescription, customUrl, customImage }) => {
     ? `${customTitle} | ${title}`
     : title
   const seoDescription = customDescription || description
-  const seoUrl = customUrl ? `${siteUrl}/${customUrl}` : siteUrl
+  const seoUrl = customUrl ? `${siteUrl}/${customUrl}/` : `${siteUrl}/`
   const seoImage = `${siteUrl}${customImage || image}`
 
   return (
