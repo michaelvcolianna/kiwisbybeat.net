@@ -1,0 +1,77 @@
+:root {
+  --color-background: rgb(254, 254, 250);
+  --color-foreground: rgb(29, 32, 31);
+  --color-dimmed: rgb(92, 87, 87);
+  --color-presentational: rgb(221, 221, 221);
+  --color-link: rgb(0, 65, 106);
+  --font-body: 'Inter', sans-serif;
+  --font-kiwis: 'Busorama ITC Std', display;
+  --size-copy: 16px;
+  --width-main: none;
+
+  @include bp(480px) {
+    --size-copy: 18px;
+    --width-main: 90%;
+  }
+
+  @include bp(768px) {
+    --size-copy: 20px;
+    --width-main: 640px;
+  }
+
+  @include bp(1024px) {
+    --width-main: 992px;
+  }
+
+  @include bp(1200px) {
+    --size-copy: 22px;
+    --width-main: 1120px;
+  }
+
+  @include bp(1440px) {
+    --size-copy: 24px;
+    --width-main: 75%;
+  }
+}
+
+html {
+  font-size: var(--size-copy);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a {
+  color: var(--color-link);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+main {
+  margin: auto;
+  max-width: var(--width-main);
+}
+
+.sr-only {
+  height: 0;
+  left: -999rem;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  top: -999rem;
+  width: 0;
+}

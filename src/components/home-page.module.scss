@@ -1,0 +1,73 @@
+.lead-big {
+  font-size: 2rem;
+  letter-spacing: -0.0125rem;
+  line-height: 1.15;
+  padding-bottom: 30vh;
+  padding-top: 20vh;
+
+  strong,
+  em {
+    white-space: nowrap;
+  }
+
+  strong {
+    font-weight: normal;
+  }
+
+  em {
+    font-style: normal;
+  }
+
+  div {
+    display: flex;
+    gap: 2rem;
+  }
+
+  a {
+    align-items: center;
+    display: flex;
+    gap: 0.25rem;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    @include bp(768px) {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+}
+
+.comics {
+  @include marginizer;
+
+  ul {
+    @include marginizer(3rem);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include bp(768px) {
+      gap: 3rem 1rem;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.about {
+  @include marginizer;
+  padding-top: 10vh;
+}
+
+.news {
+  padding-top: 15vh;
+
+  ul {
+    @include marginizer;
+    padding: 0 2rem;
+  }
+}
