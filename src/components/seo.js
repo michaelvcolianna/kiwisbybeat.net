@@ -45,7 +45,7 @@ const Seo = ({ customTitle, customDescription, customUrl, customImage }) => {
       <meta name="twitter:title" content={seoTitle} />
       <meta name="twitter:description" content={seoDescription} />
       <meta name="twitter:image" content={seoImage} />
-      <meta name="fb:app_id" content="944126416562574" />
+      <meta property="fb:app_id" content="944126416562574" />
     </Helmet>
   )
 }
