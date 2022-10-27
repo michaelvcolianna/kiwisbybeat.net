@@ -46,7 +46,7 @@ const PageTemplate = ({
   const LayoutComponent = Components[pageType]
 
   let description, title, url
-  let image = frontmatter.cover ? frontmatter.cover.publicUrl : null
+  let image = frontmatter.cover ? frontmatter.cover.publicURL : null
 
   if(pageType === 'chapter') {
     description = frontmatter.description || `The ${frontmatter.title} series on Kiwis by Beat!`
