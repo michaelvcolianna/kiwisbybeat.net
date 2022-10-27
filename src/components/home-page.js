@@ -72,7 +72,7 @@ const HomePage = ({ toc, body }) => {
 
         <p>
           A huge goal for this site to make the comics more accessible.
-          A few have descriptions right now.
+          A scant few have descriptions right now.
           It's a long process to add image captions, but worthwhile so <em>everyone</em> can enjoy Ryan's comics.
           If you're able to contribute some, please reach out!
           Any help is appreciated!

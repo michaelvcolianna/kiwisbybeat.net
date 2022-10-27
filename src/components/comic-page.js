@@ -43,7 +43,7 @@ const ComicPage = ({ frontmatter, body, parent, pagePath, pages, pageNav }) => {
 
         <h1>{parent.frontmatter.title}: {frontmatter.title}</h1>
 
-        <article dangerouslySetInnerHTML={{ __html: body }} />
+        <article className={styles.markdown} dangerouslySetInnerHTML={{ __html: body }} />
       </section>
 
       <nav aria-labelledby="label-pages-nav">
