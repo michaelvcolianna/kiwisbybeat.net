@@ -2,6 +2,7 @@
 title: Home
 ---
 
+- 2022 Nov 1: I added captions to the short comics in [Verse & Stuff](/verse-and-stuff).
 - 2022 Oct 27: As a (late) birthday present to myself, I redid the site! I moved away from a PHP-based system. I'm now using Gatsby to statically generate the site. It was a much longer labor of love than I thought it would be but I'm happy with the results.
 - 2021 Nov 23: Added a "Ribald Youth Videos" page to the "Other Comics" section. Many thanks to **essdee** for those, which were on an "extra stuff" page from the original Ribald Youth site.
 - 2020 Apr 21: Added an image to Socks that was sent to me by **bluffy**!
