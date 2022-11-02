@@ -49,7 +49,7 @@ const HomePage = ({ toc, body }) => {
           This site was lovingly pieced together by <ExternalLink href="https://github.com/michaelvcolianna">Michael V. Colianna</ExternalLink>.
           In most cases, I have tried to keep the names of parts intact per appearance on the original site, whether those were errors by Ryan or otherwise.
           In some cases I had to guess, though.
-          Feel free to send me a message on GitHub if you have any of the missing images, or if you have better names for some of the series/parts.
+          Feel free to send me a message on GitHub/Twitter/Facebook if you have any of the missing images, or if you have better names for some of the series/parts.
         </p>
 
         <p>
