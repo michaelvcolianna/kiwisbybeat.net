@@ -11,6 +11,10 @@ const Footer = () => {
         <span>Comics © 2003-2015 by <ExternalLink href="https://en.wikipedia.org/wiki/Ryan_Armand">Ryan Armand</ExternalLink></span>
         <br />
         <span>Site 2019-{new Date().getFullYear()} by <ExternalLink href="https://github.com/michaelvcolianna">MVC</ExternalLink></span>
+        <br />
+        <span>
+          <ExternalLink href="https://twitter.com/KiwisByBeat">Twitter</ExternalLink> | <ExternalLink href="https://facebook.com/kiwisbybeat">Facebook</ExternalLink>
+        </span>
       </footer>
 
       <div hidden>
