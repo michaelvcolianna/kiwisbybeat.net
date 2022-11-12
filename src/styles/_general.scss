@@ -9,26 +9,26 @@
   --size-copy: 16px;
   --width-main: none;
 
-  @include bp(480px) {
+  @include bp($screen-xs) {
     --size-copy: 18px;
     --width-main: 90%;
   }
 
-  @include bp(768px) {
+  @include bp($screen-sm) {
     --size-copy: 20px;
     --width-main: 640px;
   }
 
-  @include bp(1024px) {
+  @include bp($screen-md) {
     --width-main: 992px;
   }
 
-  @include bp(1200px) {
+  @include bp($screen-lg) {
     --size-copy: 22px;
     --width-main: 1120px;
   }
 
-  @include bp(1440px) {
+  @include bp($screen-xl) {
     --size-copy: 24px;
     --width-main: 75%;
   }
