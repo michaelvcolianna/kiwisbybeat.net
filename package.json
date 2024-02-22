@@ -12,7 +12,7 @@
     "dev": "gatsby develop",
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "node ./cachimize.js",
+    "build": "bash copier.sh",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
