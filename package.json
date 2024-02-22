@@ -8,10 +8,11 @@
     "gatsby"
   ],
   "scripts": {
+    "cachimize": "node ./cachimize.js",
     "dev": "gatsby develop",
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "node ./cachimize.js",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
