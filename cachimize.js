@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.readdir(`${__dirname}/../cache`, (err, files) => {
+fs.readdir(`${__dirname}/../cache/.build`, (err, files) => {
   if(err) {
     console.log(err);
   }
