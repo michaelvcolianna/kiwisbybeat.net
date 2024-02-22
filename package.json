@@ -12,7 +12,7 @@
     "dev": "gatsby develop",
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "node ./cachimize.js && ls -laHg && cd ../cache && pwd && ls -laHg",
+    "build": "node ./cachimize.js",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
