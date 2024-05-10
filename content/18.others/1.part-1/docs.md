@@ -1,5 +1,0 @@
----
-title: Chugworth
----
-
-![](chugworth.jpg)
