@@ -58,7 +58,7 @@ title: 'Buggy and the Beasts'
 ![](../../../../assets/modern-fried-snake/part-12/modern917.jpg)
 ![](../../../../assets/modern-fried-snake/part-12/modern918.jpg)
 ![](../../../../assets/modern-fried-snake/part-12/modern919.jpg)
-![](../../../../assets/modern-fried-snake/part-12/modern920.jpg)
+<!-- ![](../../../../assets/modern-fried-snake/part-12/modern920.jpg) -->
 ![](../../../../assets/modern-fried-snake/part-12/modern921.jpg)
 ![](../../../../assets/modern-fried-snake/part-12/modern922.jpg)
 ![](../../../../assets/modern-fried-snake/part-12/modern923.jpg)

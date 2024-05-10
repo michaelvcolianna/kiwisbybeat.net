@@ -16,7 +16,7 @@ title: 'The Old World'
 ![](../../../../assets/short-stories/part-4/rat10.png)
 ![](../../../../assets/short-stories/part-4/rat11.png)
 ![](../../../../assets/short-stories/part-4/rat12.png)
-![](../../../../assets/short-stories/part-4/rat13.png)
+<!-- ![](../../../../assets/short-stories/part-4/rat13.png) -->
 ![](../../../../assets/short-stories/part-4/rat14.png)
 ![](../../../../assets/short-stories/part-4/rat15.png)
 ![](../../../../assets/short-stories/part-4/rat16.png)

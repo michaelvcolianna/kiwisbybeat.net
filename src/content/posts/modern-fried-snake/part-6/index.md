@@ -55,7 +55,7 @@ title: 'Mop & the Silent Beauty'
 ![](../../../../assets/modern-fried-snake/part-6/modern377.jpg)
 ![](../../../../assets/modern-fried-snake/part-6/modern378.jpg)
 ![](../../../../assets/modern-fried-snake/part-6/modern379.jpg)
-![](../../../../assets/modern-fried-snake/part-6/modern380.jpg)
+<!-- ![](../../../../assets/modern-fried-snake/part-6/modern380.jpg) -->
 ![](../../../../assets/modern-fried-snake/part-6/modern381.jpg)
 ![](../../../../assets/modern-fried-snake/part-6/modern382.jpg)
 ![](../../../../assets/modern-fried-snake/part-6/modern383.jpg)
