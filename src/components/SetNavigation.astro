@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content'
+
+const { set } = Astro.props
+
+const siblings: {
+  previous: any,
+  next: any,
+} = {
+  previous: undefined,
+  next: undefined,
+}
+
+if(set.data.series && set.data.set) {
+  const posts = await getCollection('posts')
+  siblings.previous = posts.find(sibling => sibling.data.series === set.data.series && sibling.data.set === set.data.set - 1)
+  siblings.next = posts.find(sibling => sibling.data.series === set.data.series && sibling.data.set === set.data.set + 1)
+}
+
+---
+
+{(siblings.previous || siblings.next) && (
+  <nav>
+    <ul>
+      <li>
+        {siblings.previous
+          ? <a href={`/${siblings.previous.slug}`}>Previous: {siblings.previous.data.title}</a>
+          : <em>No previous page</em>
+        }
+      </li>
+
+      <li>
+        {siblings.next
+          ? <a href={`/${siblings.next.slug}`}>Next: {siblings.next.data.title}</a>
+          : <em>No next page</em>
+        }
+      </li>
+    </ul>
+  </nav>
+)}
