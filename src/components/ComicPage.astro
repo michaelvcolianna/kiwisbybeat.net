@@ -1,0 +1,73 @@
+---
+import { getCollection } from 'astro:content'
+import PageLink from '@components/PageLink.astro'
+
+const { post } = Astro.props
+
+const posts = await getCollection('posts')
+const parent = posts.find(item => item.data.series === post.data.series && !item.data.set)
+const pages = posts.filter(item => item.data.series === post.data.series && item.data.set).sort((a, b) => {
+  if (a.data.set && b.data.set) {
+    if (a.data.set < b.data.set) {
+      return -1
+    }
+    else if (a.data.set > b.data.set) {
+      return 1
+    }
+  }
+
+  return 0
+})
+const previous = posts.find(sibling => sibling.data.series === post.data.series && sibling.data.set === post.data.set - 1)
+const next = posts.find(sibling => sibling.data.series === post.data.series && sibling.data.set === post.data.set + 1)
+---
+
+<section class="comic-body">
+  <a href={`/${parent?.slug}` || '../'} class="back-link">
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="1" width="0.75"><path fill="currentColor" d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z"/></svg>
+
+    Back
+  </a>
+
+  <h1>{parent?.data?.title || '?'}: {post.data.title}</h1>
+
+  <article class="markdown">
+    <slot />
+  </article>
+</section>
+
+<nav aria-labelledby="label-pages-nav">
+  <span class="sr-only" id="label-pages-nav">
+    {parent?.data?.title || '?'} pages
+  </span>
+
+  <ul class="page-nav">
+    <li class="previous">
+      <PageLink post={previous}>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="1" width="0.625"><path fill="currentColor" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+
+        <span class="sr-only">Previous page</span>
+      </PageLink>
+    </li>
+
+    <li class="all-links">
+      <h3>All pages</h3>
+
+      <ul>
+        {pages.map(link => (
+          <li>
+            <a href={`/${link.slug}`}>{link.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    </li>
+
+    <li class="next">
+      <PageLink post={next}>
+        <span class="sr-only">Next page</span>
+
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="1" width="0.625"><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+      </PageLink>
+    </li>
+  </ul>
+</nav>

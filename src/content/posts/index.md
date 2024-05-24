@@ -1,7 +1,8 @@
 ---
-title: Home
+title: Kiwis by Beat!
 ---
 
+- 2024 May 31: The site has been updated to correct some faulty information. Plus a few missing panels for [Modern Fried Snake](/modern-fried-snake) and [Socks](/socks) were added, thanks to **essdee**.
 - 2022 Nov 12: We have a Discord server now, thanks to **essdee** (of the Ribald Youth videos update). Added the note about that to the top of the page.
 - 2022 Nov 1: I created Facebook & Twitter profiles! Links are in the footer. I also added captions to the short comics in [Verse & Stuff](/verse-and-stuff).
 - 2022 Oct 27: As a (late) birthday present to myself, I redid the site! I moved away from a PHP-based system. I'm now using Gatsby to statically generate the site. It was a much longer labor of love than I thought it would be but I'm happy with the results.

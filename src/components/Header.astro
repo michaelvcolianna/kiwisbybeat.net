@@ -16,16 +16,33 @@ const navigation = posts.filter(post => !post.data.set && post.slug !== 'index')
 })
 ---
 
-<header>
-  kiwis by beat
+<header class="site-header">
+  <a href="/" class="branding">
+    Kiwis by Beat!
+  </a>
 
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
+  <nav
+    data-todo="Class toggle based on menu open"
+    aria-labelledby="label-series-nav"
+    class=""
+  >
+    <button
+      data-todo="On click handler"
+      aria-haspopup="true"
+      id="label-series-nav"
+      class="toggle-button"
+    >
+      <span class="sr-only">Comics menu</span>
+    </button>
 
-      {navigation.map(nav => (
-        <li><a href={`/${nav.slug}`}>{nav.data.title}</a></li>
-      ))}
-    </ul>
+    <div data-todo="Aria hidden toggle">
+      <ul>
+        {navigation.map(nav => (
+          <li>
+            <a href={`/${nav.slug}`}>{nav.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
   </nav>
 </header>

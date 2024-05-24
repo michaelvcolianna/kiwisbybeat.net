@@ -1,8 +1,9 @@
 ---
 import { getCollection } from 'astro:content'
-import MarkdownPostLayout from '@layouts/MarkdownPostLayout.astro'
-import SeriesNavigation from '@components/SeriesNavigation.astro'
-import SetNavigation from '@components/SetNavigation.astro'
+import BaseLayout from '@layouts/BaseLayout.astro'
+import HomePage from '@components/HomePage.astro'
+import SeriesPage from '@components/SeriesPage.astro'
+import ComicPage from '@components/ComicPage.astro'
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts')
@@ -14,10 +15,42 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render()
+
+const Components = {
+  home: HomePage,
+  chapter: SeriesPage,
+  docs: ComicPage
+}
+
+const pageType = post.data.series && post.data.set ? 'docs' : (post.data.series ? 'chapter' : 'home')
+const LayoutComponent = Components[pageType]
+
+// @todo Rework this for the updated pageType & not using React/Gatsby head
+/*
+  let description, title, url
+  let image = frontmatter.cover ? frontmatter.cover.publicURL : null
+
+  if(pageType === 'chapter') {
+    description = frontmatter.description || `The ${frontmatter.title} series on Kiwis by Beat!`
+    title = frontmatter.title
+    url = urlFromPath(pagePath)
+  }
+
+  if(pageType === 'docs') {
+    description = `${frontmatter.title} of the ${parent.frontmatter.title} series on Kiwis by Beat!`
+    title = `${parent.frontmatter.title} – ${frontmatter.title}`
+    url = pageUrl(parent.fileAbsolutePath, pagePath)
+
+    if(parent.frontmatter.cover) {
+      image = parent.frontmatter.cover.publicURL
+    }
+  }
+
+*/
 ---
 
-<MarkdownPostLayout frontmatter={post.data}>
-  <Content />
-  <SeriesNavigation series={post} />
-  <SetNavigation set={post} />
-</MarkdownPostLayout>
+<BaseLayout frontmatter={post.data}>
+  <LayoutComponent post={post}>
+    <Content />
+  </LayoutComponent>
+</BaseLayout>

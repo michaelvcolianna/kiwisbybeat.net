@@ -1,0 +1,13 @@
+---
+import CardImage from '@components/CardImage.astro'
+
+const { comic } = Astro.props
+---
+
+<a href={`/${comic.slug}`} class="card">
+  <article>
+    <CardImage imagePath={`/src/assets/${comic.slug}/${comic.data.cover}`} />
+
+    <h2>{comic.data.title}</h2>
+  </article>
+</a>

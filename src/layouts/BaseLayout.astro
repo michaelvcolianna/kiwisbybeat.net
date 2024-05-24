@@ -2,7 +2,7 @@
 import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
 
-const { pageTitle } = Astro.props
+const { frontmatter } = Astro.props
 ---
 
 <html lang="en">
@@ -11,15 +11,19 @@ const { pageTitle } = Astro.props
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title>{frontmatter.title || '?'}</title>
   </head>
 
   <body>
+    <a href="#content" class="skip-content">Skip to content</a>
+
     <Header />
 
-    <h1>{pageTitle}</h1>
+    <h1>{frontmatter.title || '?'}</h1>
 
-    <slot />
+    <main id="content">
+      <slot />
+    </main>
 
     <Footer />
   </body>
