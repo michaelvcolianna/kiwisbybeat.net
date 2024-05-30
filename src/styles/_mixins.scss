@@ -1,0 +1,35 @@
+// I don't like globally breaking ULs
+@mixin un-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// To add any kind of motion, since I consider 'reduce' to mean 'none'
+@mixin motion {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}
+
+// I use this a lot
+@mixin marginizer($gap: 1rem) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: 1fr;
+}
+
+// Responsive
+@mixin bp($size, $reverse: false) {
+  $measure: if($reverse, 'max-width', 'min-width');
+  $width: if($reverse, $size - 1, $size);
+
+  @media(#{$measure}: $width) {
+    @content;
+  }
+}
+
+// Transitions
+@function tx($speed: 195ms, $timing: ease-in-out) {
+  @return #{$speed} #{$timing};
+}

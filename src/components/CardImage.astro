@@ -1,6 +1,6 @@
 ---
 import type { ImageMetadata } from 'astro'
-import { Image } from 'astro:assets'
+import { Image, Picture } from 'astro:assets'
 
 interface Props {
   imagePath: string;
@@ -14,4 +14,14 @@ if(!images[imagePath]) {
 }
 ---
 
-<Image src={images[imagePath]()} alt="" />
+<Picture formats={['avif', 'webp']} src={images[imagePath]()} alt="" />
+
+<style lang="scss">
+picture {
+  img {
+    display: block;
+    height: auto;
+    max-width: 615px;
+  }
+}
+</style>

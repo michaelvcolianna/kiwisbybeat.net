@@ -24,7 +24,7 @@ const navigation = posts.filter(post => !post.data.set && post.slug !== 'index')
   <nav
     data-todo="Class toggle based on menu open"
     aria-labelledby="label-series-nav"
-    class=""
+    class="menu"
   >
     <button
       data-todo="On click handler"
@@ -46,3 +46,129 @@ const navigation = posts.filter(post => !post.data.set && post.slug !== 'index')
     </div>
   </nav>
 </header>
+
+<style lang="scss">
+.site-header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  height: 3rem;
+  justify-content: space-between;
+}
+
+.branding {
+  color: var(--color-foreground);
+  font-family: var(--font-kiwis);
+  font-size: 2rem;
+  height: 2rem;
+  line-height: 1;
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.toggle-button {
+  --horizontal-position: calc(50% - 0.25rem);
+
+  appearance: none;
+  background-color: var(--color-background);
+  border: 0;
+  color: var(--color-foreground);
+  display: block;
+  height: 3rem;
+  padding: 0;
+  position: relative;
+  width: 3rem;
+  z-index: 2;
+
+  &::after,
+  &::before {
+    background-color: var(--color-foreground);
+    content: '';
+    height: 2px;
+    left: calc(50% - 0.5rem);
+    position: absolute;
+    width: 1rem;
+
+    @include motion {
+      transition: top tx(),
+                  transform tx();
+    }
+  }
+
+  &::after {
+    top: var(--horizontal-position);
+  }
+
+  &::before {
+    bottom: var(--horizontal-position);
+  }
+}
+
+.menu {
+  line-height: 1;
+  position: relative;
+
+  div {
+    background-color: var(--color-presentational);
+    opacity: 0;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    width: calc(100vw - 4rem);
+    z-index: -1;
+
+    @include motion {
+      transition: opacity tx();
+    }
+  }
+
+  ul {
+    @include un-ul;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: center;
+    visibility: hidden;
+  }
+
+  a {
+    align-items: center;
+    color: var(--color-foreground);
+    display: flex;
+    font-weight: bold;
+    height: 2rem;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  &.menu-open {
+    .toggle-button {
+      background-color: var(--color-presentational);
+
+      &::after,
+      &::before {
+        top: calc(50% - 1px);
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+    }
+
+    div {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    ul {
+      visibility: visible;
+    }
+  }
+}
+</style>
