@@ -2,14 +2,7 @@
 const { href } = Astro.props
 ---
 
-<a
-  href={href}
-  rel="noreferrer"
-  aria-describedby="label-external"
-  class="external-link"
->
-  <slot />
-</a>
+<a href={href} rel="noreferrer" aria-describedby="label-external" class="external-link"><slot /></a>
 
 <style lang="scss">
 .external-link {
