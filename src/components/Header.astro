@@ -16,6 +16,35 @@ const navigation = posts.filter(post => !post.data.set && post.slug !== 'index')
 })
 ---
 
+<script>
+let navOpen = false
+const menuNode = document.querySelector('#menuNode')
+const menuButton = document.querySelector('#label-series-nav')
+const menuItemsNode = document.querySelector('#menuItemsNode')
+
+const openMenu = () => {
+  menuNode?.classList.add('menu-open')
+  menuItemsNode?.setAttribute('aria-hidden', 'true')
+  navOpen = true
+}
+
+const closeMenu = () => {
+  menuNode?.classList.remove('menu-open')
+  menuItemsNode?.setAttribute('aria-hidden', 'false')
+  navOpen = false
+}
+
+const toggleMenu = () => navOpen ? closeMenu() : openMenu()
+
+const keyDownHandler = event => (event.key === 'Escape' && navOpen) && closeMenu()
+
+const clickAwayListener = event => !menuNode?.contains(event.target) && closeMenu()
+
+menuButton?.addEventListener('click', toggleMenu)
+document.addEventListener('keydown', keyDownHandler)
+window.addEventListener('mousedown', clickAwayListener)
+</script>
+
 <header class="site-header">
   <a href="/" class="branding">
     Kiwis by Beat!
@@ -25,9 +54,9 @@ const navigation = posts.filter(post => !post.data.set && post.slug !== 'index')
     data-todo="Class toggle based on menu open"
     aria-labelledby="label-series-nav"
     class="menu"
+    id="menuNode"
   >
     <button
-      data-todo="On click handler"
       aria-haspopup="true"
       id="label-series-nav"
       class="toggle-button"
@@ -35,8 +64,8 @@ const navigation = posts.filter(post => !post.data.set && post.slug !== 'index')
       <span class="sr-only">Comics menu</span>
     </button>
 
-    <div data-todo="Aria hidden toggle">
-      <ul>
+    <div aria-hidden="true" id="menuItemsNode">
+      <ul id="menuItemsList">
         {navigation.map(nav => (
           <li>
             <a href={`/${nav.slug}`}>{nav.data.title}</a>
