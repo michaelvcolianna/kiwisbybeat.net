@@ -24,7 +24,7 @@ const pagesText = `page${numPages !== 1 ? 's' : ''}`
 ---
 
 <article class="series-block">
-  <h1>title</h1>
+  <h1>{post.data.title}</h1>
 
   <div class="series-md">
     <slot />
@@ -57,3 +57,71 @@ const pagesText = `page${numPages !== 1 ? 's' : ''}`
     }
   </div>
 </article>
+
+<style lang="scss">
+.series-block {
+  h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: -0.0125rem;
+    line-height: 1.15;
+    padding: 5vh 0 10vh 0;
+  }
+}
+
+.series-md {
+  @include marginizer(5vh);
+
+  :global(blockquote) {
+    border-left: 2px solid var(--color-presentational);
+    margin: 0;
+    padding: 0 4rem 0 2rem;
+  }
+}
+
+.series-pages {
+  margin-top: 5vh;
+
+  p {
+    color: var(--color-dimmed);
+    text-align: center;
+  }
+
+  a {
+    align-items: center;
+    border-radius: 3px;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+
+    &.read-link {
+      background-color: var(--color-foreground);
+      color: var(--color-background);
+      gap: 0.25rem;
+      margin: 1rem auto 0 auto;
+      width: 12rem;
+
+      svg {
+        height: 1rem;
+        width: 1rem;
+      }
+    }
+  }
+
+  ul {
+    @include marginizer;
+    list-style-type: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+
+    @include bp($screen-sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    a {
+      border: 1px solid;
+      color: var(--color-foreground);
+    }
+  }
+}
+</style>
