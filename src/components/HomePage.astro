@@ -6,8 +6,6 @@ import ExternalLink from '@components/ExternalLink.astro'
 // @note This template doesn't need:
 // const { post } = Astro.props
 
-// @todo SEO for home page
-
 const posts = await getCollection('posts')
 const comics = posts.filter(post => !post.data.set && post.slug !== 'index').sort((a, b) => {
   if (a.data.series && b.data.series) {
