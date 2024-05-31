@@ -4,7 +4,16 @@ import Footer from '@components/Footer.astro'
 
 import '@styles/global.scss'
 
-const { frontmatter } = Astro.props
+const { pageType, customTitle, customDescription, customUrl, customImage } = Astro.props
+
+const siteUrl = import.meta.env.SITE
+const seoType = pageType === 'home' ? 'website' : (pageType === 'chapter' ? 'book' : 'article')
+const seoTitle = customTitle
+    ? `${customTitle} | Kiwis by Beat!`
+    : 'Kiwis by Beat!'
+const seoDescription = customDescription || 'A reimagining of the Kiwis by Beat! web site by Ryan Armand.'
+const seoUrl = customUrl ? `${siteUrl}/${customUrl}/` : `${siteUrl}/`
+const seoImage = `${siteUrl}/${customImage || 'kiwishare.jpg'}`
 ---
 
 <html lang="en">
@@ -13,7 +22,22 @@ const { frontmatter } = Astro.props
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{frontmatter.title || '?'}</title>
+    <title>{seoTitle}</title>
+    <link rel="canonical" href={seoUrl} />
+    <meta name="title" content={seoTitle} />
+    <meta name="description" content={seoDescription} />
+    <meta name="image" content={seoImage} />
+    <meta property="og:type" content={seoType} />
+    <meta property="og:url" content={seoUrl} />
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={seoDescription} />
+    <meta property="og:image" content={seoImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={seoUrl} />
+    <meta name="twitter:title" content={seoTitle} />
+    <meta name="twitter:description" content={seoDescription} />
+    <meta name="twitter:image" content={seoImage} />
+    <meta property="fb:app_id" content="944126416562574" />
   </head>
 
   <body>

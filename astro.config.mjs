@@ -7,6 +7,9 @@ const __dirname = dirname(__filename)
 
 // https://astro.build/config
 export default defineConfig({
+  site: process.env.NODE_ENV === 'production'
+    ? 'https://kiwisbybeat.net'
+    : 'http://localhost:4321',
   vite: {
     css: {
       preprocessorOptions: {
