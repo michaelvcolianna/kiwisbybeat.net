@@ -33,7 +33,7 @@ title: 'Buggy and the Great Sadness'
 ![](../../../../assets/modern-fried-snake/part-14/modern1100.jpg)
 ![](../../../../assets/modern-fried-snake/part-14/modern1101.jpg)
 ![](../../../../assets/modern-fried-snake/part-14/modern1102.jpg)
-<!-- ![](../../../../assets/modern-fried-snake/part-14/modern1103.jpg)
+![](../../../../assets/modern-fried-snake/part-14/modern1103.jpg)
 ![](../../../../assets/modern-fried-snake/part-14/modern1104.jpg)
 ![](../../../../assets/modern-fried-snake/part-14/modern1105.jpg)
 ![](../../../../assets/modern-fried-snake/part-14/modern1106.jpg)
@@ -41,7 +41,7 @@ title: 'Buggy and the Great Sadness'
 ![](../../../../assets/modern-fried-snake/part-14/modern1108.jpg)
 ![](../../../../assets/modern-fried-snake/part-14/modern1109.jpg)
 ![](../../../../assets/modern-fried-snake/part-14/modern1110.jpg)
-![](../../../../assets/modern-fried-snake/part-14/modern1111.jpg) -->
+![](../../../../assets/modern-fried-snake/part-14/modern1111.jpg)
 ![](../../../../assets/modern-fried-snake/part-14/modern1112.jpg)
 ![](../../../../assets/modern-fried-snake/part-14/modern1113.jpg)
 ![](../../../../assets/modern-fried-snake/part-14/modern1114.jpg)
