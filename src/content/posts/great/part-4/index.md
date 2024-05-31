@@ -1,0 +1,38 @@
+---
+series: 6
+set: 4
+title: 'Delicious?'
+---
+
+![](../../../../assets/great/part-4/great104.jpg)
+![](../../../../assets/great/part-4/great105.jpg)
+![](../../../../assets/great/part-4/great106.jpg)
+![](../../../../assets/great/part-4/great107.jpg)
+![](../../../../assets/great/part-4/great108.jpg)
+![](../../../../assets/great/part-4/great109.jpg)
+![](../../../../assets/great/part-4/great110.jpg)
+![](../../../../assets/great/part-4/great111.jpg)
+![](../../../../assets/great/part-4/great112.jpg)
+![](../../../../assets/great/part-4/great113.jpg)
+![](../../../../assets/great/part-4/great114.jpg)
+![](../../../../assets/great/part-4/great115.jpg)
+![](../../../../assets/great/part-4/great116.jpg)
+![](../../../../assets/great/part-4/great117.jpg)
+![](../../../../assets/great/part-4/great118.jpg)
+![](../../../../assets/great/part-4/great119.jpg)
+![](../../../../assets/great/part-4/great120.jpg)
+![](../../../../assets/great/part-4/great121.jpg)
+![](../../../../assets/great/part-4/great122.jpg)
+![](../../../../assets/great/part-4/great123.jpg)
+![](../../../../assets/great/part-4/great124.jpg)
+![](../../../../assets/great/part-4/great125.jpg)
+![](../../../../assets/great/part-4/great126.jpg)
+![](../../../../assets/great/part-4/great127.jpg)
+![](../../../../assets/great/part-4/great128.jpg)
+![](../../../../assets/great/part-4/great129.jpg)
+![](../../../../assets/great/part-4/great130.jpg)
+![](../../../../assets/great/part-4/great131.jpg)
+![](../../../../assets/great/part-4/great132.jpg)
+![](../../../../assets/great/part-4/great133.jpg)
+![](../../../../assets/great/part-4/great134.jpg)
+![](../../../../assets/great/part-4/great135.jpg)

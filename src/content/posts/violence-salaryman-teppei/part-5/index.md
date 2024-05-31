@@ -1,0 +1,35 @@
+---
+series: 16
+set: 5
+title: 'Spring Into Action! Teppei!!'
+---
+
+![](../../../../assets/violence-salaryman-teppei/part-5/t96.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t97.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t98.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t99.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t100.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t101.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t102.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t103.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t104.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t105.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t106.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t107.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t108.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t109.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t110.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t111.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t112.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t113.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t114.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t115.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t116.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t117.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t118.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t119.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t120.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t121.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t122.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t123.jpg)
+![](../../../../assets/violence-salaryman-teppei/part-5/t124.jpg)

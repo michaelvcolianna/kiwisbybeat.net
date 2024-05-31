@@ -1,0 +1,8 @@
+---
+const { post } = Astro.props
+---
+
+{post
+  ? <a href={`/${post.slug}`}><slot /></a>
+  : <button disabled><slot /></button>
+}

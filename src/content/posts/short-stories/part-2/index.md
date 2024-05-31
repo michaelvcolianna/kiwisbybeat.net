@@ -1,0 +1,35 @@
+---
+series: 14
+set: 2
+title: 'The Lion'
+---
+
+![](../../../../assets/short-stories/part-2/game1.jpg)
+![](../../../../assets/short-stories/part-2/game2.jpg)
+![](../../../../assets/short-stories/part-2/game3.jpg)
+![](../../../../assets/short-stories/part-2/game4.jpg)
+![](../../../../assets/short-stories/part-2/game5.jpg)
+![](../../../../assets/short-stories/part-2/game6.jpg)
+![](../../../../assets/short-stories/part-2/game7.jpg)
+![](../../../../assets/short-stories/part-2/game8.jpg)
+![](../../../../assets/short-stories/part-2/game9.jpg)
+![](../../../../assets/short-stories/part-2/game10.jpg)
+![](../../../../assets/short-stories/part-2/game11.jpg)
+![](../../../../assets/short-stories/part-2/game12.jpg)
+![](../../../../assets/short-stories/part-2/game13.jpg)
+![](../../../../assets/short-stories/part-2/game14.jpg)
+![](../../../../assets/short-stories/part-2/game15.jpg)
+![](../../../../assets/short-stories/part-2/game16.jpg)
+![](../../../../assets/short-stories/part-2/game17.jpg)
+![](../../../../assets/short-stories/part-2/game18.jpg)
+![](../../../../assets/short-stories/part-2/game19.jpg)
+![](../../../../assets/short-stories/part-2/game20.jpg)
+![](../../../../assets/short-stories/part-2/game21.jpg)
+![](../../../../assets/short-stories/part-2/game22.jpg)
+![](../../../../assets/short-stories/part-2/game23.jpg)
+![](../../../../assets/short-stories/part-2/game24.jpg)
+![](../../../../assets/short-stories/part-2/game25.jpg)
+![](../../../../assets/short-stories/part-2/game26.jpg)
+![](../../../../assets/short-stories/part-2/game27.jpg)
+![](../../../../assets/short-stories/part-2/game28.jpg)
+![](../../../../assets/short-stories/part-2/game29.jpg)

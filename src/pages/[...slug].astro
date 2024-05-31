@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '@layouts/BaseLayout.astro'
+import HomePage from '@components/HomePage.astro'
+import SeriesPage from '@components/SeriesPage.astro'
+import ComicPage from '@components/ComicPage.astro'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts')
+
+  return posts.map(post => ({
+    params: { slug: post.slug === 'index' ? '/' : post.slug }, props: { post }
+  }))
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render()
+
+const Components = {
+  home: HomePage,
+  chapter: SeriesPage,
+  docs: ComicPage
+}
+
+const pageType = post.data.series && post.data.set ? 'docs' : (post.data.series ? 'chapter' : 'home')
+const LayoutComponent = Components[pageType]
+
+let customTitle, customDescription, customUrl
+let customImage = post.data.cover || undefined
+
+if (pageType === 'chapter') {
+  customTitle = post.data.title
+  customDescription = `The ${post.data.title} series on Kiwis by Beat!`
+  customUrl = post.slug
+}
+
+if (pageType === 'docs') {
+  const posts = await getCollection('posts')
+  const parent = posts.find(item => item.data.series === post.data.series && !item.data.set)
+
+  customTitle = `${parent?.data.title} - ${post.data.title}`
+  customDescription = `${post.data.title} of the ${parent?.data.title} series on Kiwis by Beat!`
+  customUrl = `${parent?.slug}/${post.slug}`
+
+  if (parent?.data.cover) {
+    customImage = parent?.data.cover
+  }
+}
+---
+
+<BaseLayout {pageType} {customTitle} {customDescription} {customUrl} {customImage}>
+  <LayoutComponent post={post}>
+    <Content />
+  </LayoutComponent>
+</BaseLayout>
