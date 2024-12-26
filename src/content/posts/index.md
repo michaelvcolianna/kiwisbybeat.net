@@ -2,6 +2,7 @@
 title: Kiwis by Beat!
 ---
 
+- 2024 Dec 25: We've removed our Facebook & Twitter accounts and created one on Bluesky for now. But the main way to get in touch is via Discord.
 - 2024 May 31: The site has been migrated from Gatsby to Astro, then updated to correct some faulty information. Plus a few missing panels for [Modern Fried Snake](/modern-fried-snake) and [Socks](/socks) were added, thanks to **essdee**.
 - 2022 Nov 12: We have a Discord server now, thanks to **essdee** (of the Ribald Youth videos update). Added the note about that to the top of the page.
 - 2022 Nov 1: I created Facebook & Twitter profiles! Links are in the footer. I also added captions to the short comics in [Verse & Stuff](/verse-and-stuff).
