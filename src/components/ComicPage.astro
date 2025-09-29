@@ -44,15 +44,15 @@ if (nextLink && lastImage) {
 
   <h1>{parent?.data?.title || '?'}: {post.data.title}</h1>
 
+  <article class="markdown">
+    <slot />
+  </article>
+
   {post.data.commentary && <details>
     <summary>Ryan's commentary:</summary>
 
     <p set:html={post.data.commentary} />
   </details>}
-
-  <article class="markdown">
-    <slot />
-  </article>
 </section>
 
 <nav aria-labelledby="label-pages-nav">
@@ -116,6 +116,7 @@ if (nextLink && lastImage) {
     color: var(--color-dimmed);
     font-size: 0.8rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 
     summary {
       cursor: pointer;
