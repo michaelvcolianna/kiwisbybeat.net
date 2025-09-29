@@ -2,7 +2,7 @@
 const { href } = Astro.props
 
 const pathname = new URL(Astro.request.url).pathname
-const isCurrent = pathname === href
+const isCurrent = pathname.replace(/^\/|\/$/g, '') === href.replace(/^\/|\/$/g, '')
 ---
 
 <a
