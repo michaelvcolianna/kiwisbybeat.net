@@ -24,13 +24,13 @@ const menuItemsNode = document.querySelector('#menuItemsNode')
 
 const openMenu = () => {
   menuNode?.classList.add('menu-open')
-  menuItemsNode?.setAttribute('aria-hidden', 'true')
+  menuItemsNode?.setAttribute('aria-hidden', 'false')
   navOpen = true
 }
 
 const closeMenu = () => {
   menuNode?.classList.remove('menu-open')
-  menuItemsNode?.setAttribute('aria-hidden', 'false')
+  menuItemsNode?.setAttribute('aria-hidden', 'true')
   navOpen = false
 }
 

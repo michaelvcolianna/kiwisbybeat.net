@@ -4,6 +4,8 @@ set: 1
 title: Santa
 ---
 
+<figure>
+
 ![](../../../../assets/verse-and-stuff/part-1/santatitle.png)
 ![](../../../../assets/verse-and-stuff/part-1/santa1.png)
 ![](../../../../assets/verse-and-stuff/part-1/santa2.png)
@@ -13,6 +15,7 @@ title: Santa
 ![](../../../../assets/verse-and-stuff/part-1/santa6.png)
 ![](../../../../assets/verse-and-stuff/part-1/santa7.png)
 
+<figcaption>
 Ryan used watercolors for the images, employing a boxy, almost disheveled style. There's narrator-style text, written in a dark blue ink pen, but the characters also have speech bubbles with red text he painted. The speech bubbles intersperse with the text at times, as they are part of the verse. Instead of a single comic image with panels, Ryan broke each installment into separate images with panels. The title is "The Kid What Sassed Santa."
 
 1. A cartoonish Santa flies his sleigh, seated as though he barely has control. Two of the visible reindeer have misaligned eyes. The text reads: "On Dasher, on Dancer, on... Whachamafoolit," he said with a stutter, forgetting their names. "On Larry, on Jimmy, on Stoney and Mudget." He was tipsy from drinks at the Old Reindeer Games. But the reindeer weren't bothered, they knew of his plight as they shot through the sky on that cold winter's night.
@@ -22,3 +25,5 @@ Ryan used watercolors for the images, employing a boxy, almost disheveled style.
 5. A single panel, but combining two events. Santa pulls the boy over his knee and spanks him with his left hand. Then, a closer shot of him spanking the boy with his right hand, his eyes wild. The text reads: Why... he... spanked the boy good! As only he could. Then he spanked the boy gooder! Like the boy's parents should.
 6. A wide shot of Santa spanking the boy a third time with more force. The boy cries out in pain. The text reads: Then he spanked the boy goodest! Cus Santa's the best! He left lumpy old coal as his gift to the pest. And as he flew off, he shouted in spite.
 7. The boy sits on the hill, holding a hand on his butt as he looks out over the red houses. Santa, silhouetted against the sky, flies off and his speech bubble reads: Merry Christmas to all, and to all a good night!
+</figcaption>
+</figure>

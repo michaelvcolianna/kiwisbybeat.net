@@ -7,7 +7,8 @@ const postsCollection = defineCollection({
     cover: z.string().optional(),
     series: z.number().optional(),
     set: z.number().optional(),
-    group: z.boolean().optional()
+    group: z.boolean().optional(),
+    commentary: z.string().optional()
   })
 })
 
