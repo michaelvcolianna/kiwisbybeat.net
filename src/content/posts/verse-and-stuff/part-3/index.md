@@ -4,12 +4,15 @@ set: 3
 title: Fruit
 ---
 
+<figure>
+
 ![](../../../../assets/verse-and-stuff/part-3/fruit1.png)
 ![](../../../../assets/verse-and-stuff/part-3/fruit2.png)
 ![](../../../../assets/verse-and-stuff/part-3/fruit3.png)
 ![](../../../../assets/verse-and-stuff/part-3/fruit4.png)
 ![](../../../../assets/verse-and-stuff/part-3/fruit5.png)
 
+<figcaption>
 Ryan used his watercolor style, with vibrant colors for this comic. This one has a more standard newspaper comic appearance, even though the panels don't have border lines. A narrator's words are red, all in caps, stylized with sharp points. The characters have speech bubbles with dark brown ink, with a more whimsical font style. Each image has multiple panels.
 
 1. A small bush is shown, with six red berries on it. The narrator says, "So there was a bush."
@@ -41,3 +44,5 @@ Ryan used his watercolor style, with vibrant colors for this comic. This one has
 27. The boy holds his hand in front of his mouth. The narrator says, "Then he took one more bite and said," and the boy finishes, "While I realize my mistake and mourn the loss of my family..."
 28. The boy lifts a finger and closes his eyes solemnly, saying, "This delicious food remains delicious."
 29. Just text, reading, "Moral: On their own merits judge all things."
+</figcaption>
+</figure>

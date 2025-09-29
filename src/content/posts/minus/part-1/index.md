@@ -4,8 +4,11 @@ set: 1
 title: 'Part 1'
 ---
 
+<figure>
+
 ![](../../../../assets/minus/part-1/minus1.jpg)
 
+<figcaption>
 1. The intro panel, with the text, "minus." The text is stylized all lowercase, with a period. minus is a little girl in a school uniform vest and skirt, with short, brown hair and a small cowlick sticking up. She's kneeling and reaching for a ball on the ground.
 2. minus bounces the ball in the air happily.
 3. Two bullies watch minus play. The first bully says, "Hey, that's the new student playing there, right? Let's go 'join' her, heh heh heh..." The second bully laughs, "Heh heh heh heh".
@@ -21,3 +24,5 @@ title: 'Part 1'
 13. A zoomed-out view. The two trees have ensnared the bullies and lifted them into the air. The second bully cries, "Aaaa!!" and drops the ball, while the first bully yells, "Help!" minus stands between the trees.
 14. The ball rolls over to minus and she regards it without emotion.
 15. minus happily returns to playing, throwing the ball in the air.
+</figcaption>
+</figure>

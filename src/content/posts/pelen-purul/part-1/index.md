@@ -4,6 +4,8 @@ set: 1
 title: 'Part 1'
 ---
 
+<figure>
+
 ![](../../../../assets/pelen-purul/part-1/pelen01.jpg)
 ![](../../../../assets/pelen-purul/part-1/pelen02.jpg)
 ![](../../../../assets/pelen-purul/part-1/pelen03.jpg)
@@ -18,6 +20,7 @@ title: 'Part 1'
 ![](../../../../assets/pelen-purul/part-1/pelen12.jpg)
 ![](../../../../assets/pelen-purul/part-1/pelen13.jpg)
 
+<figcaption>
 Ryan's art style for this comic is watercolor with fountain pen style lettering. The presentation is usually focused on the artwork, which draws the eye, before the narrator comments. Instead of a single comic image with panels, Ryan broke each installment into separate images (though some of those images *do* have panels).
 
 1. Clouds float in a blue sky over a stunning vista of tree-covered hills, which are tinted purple. "Good afternoon," the narrator says.
@@ -53,3 +56,5 @@ Ryan's art style for this comic is watercolor with fountain pen style lettering.
 31. The dragonfly lays on the ground, motionless.
 32. Holding the bug's leg across her shoulders, Pelen speaks to the bug. Little People speech bubbles are jagged, with red outlines. The words are unintelligible glyphs, also in red.
 33. Pelen kicks the dragonfly's head, and says two different things to it - almost as though she is taunting it. The narrator remarks, "Perhaps she'll be fine."
+</figcaption>
+</figure>
