@@ -44,6 +44,12 @@ if (nextLink && lastImage) {
 
   <h1>{parent?.data?.title || '?'}: {post.data.title}</h1>
 
+  {post.data.commentary && <details>
+    <summary>Ryan's commentary:</summary>
+
+    <p set:html={post.data.commentary} />
+  </details>}
+
   <article class="markdown">
     <slot />
   </article>
@@ -103,7 +109,23 @@ if (nextLink && lastImage) {
 
 .comic-body {
   h1 {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  details {
+    color: var(--color-dimmed);
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    :global(a:not([href])) {
+      cursor: not-allowed;
+      text-decoration: underline;
+    }
   }
 }
 

@@ -2,6 +2,10 @@
 title: Kiwis by Beat!
 ---
 
+- 2025 Sep 29: Thanks to **StrangeCharm**, **Not A Menhera**, **Descriptivist**, and **Freswinn** there are some new features:
+  - Any comic with a transcription now has that text inside of a `<figcaption>` element, which is only visible to screen readers.
+  - When you're viewing a comic page, the last image is clickable/tappable and it takes you to the next page.
+  - We pulled a bunch of Ryan's commentary for [minus!](/minus). When you're viewing it, you may see a "Ryan's commentary" you can expand to view his notes from the original site.
 - 2024 Dec 25: We've removed our Facebook & Twitter accounts and created one on Bluesky for now. But the main way to get in touch is via Discord.
 - 2024 May 31: The site has been migrated from Gatsby to Astro, then updated to correct some faulty information. Plus a few missing panels for [Modern Fried Snake](/modern-fried-snake) and [Socks](/socks) were added, thanks to **essdee**.
 - 2022 Nov 12: We have a Discord server now, thanks to **essdee** (of the Ribald Youth videos update). Added the note about that to the top of the page.

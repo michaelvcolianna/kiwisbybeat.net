@@ -72,6 +72,11 @@ main {
   max-width: var(--width-main);
 }
 
+code {
+  background-color: var(--color-presentational);
+  font-size: 0.9rem;
+}
+
 figure {
   margin: 0;
 }

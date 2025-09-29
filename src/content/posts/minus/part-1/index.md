@@ -2,6 +2,7 @@
 series: 1
 set: 1
 title: 'Part 1'
+commentary: "09/2/2006 - Welcome to comic. I started making these strips suddenly around the end of January."
 ---
 
 <figure>
