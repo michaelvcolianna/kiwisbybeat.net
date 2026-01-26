@@ -2,6 +2,7 @@
 title: Kiwis by Beat!
 ---
 
+- 2026 Jan 28: Fixed a spelling error, thanks to **beauty**.
 - 2025 Sep 29: Thanks to **StrangeCharm**, **Not A Menhera**, **Descriptivist**, and **Freswinn** there are some new features:
   - Any comic with a transcription now has that text inside of a `<figcaption>` element, which is only visible to screen readers.
   - When you're viewing a comic page, the last image is clickable/tappable and it takes you to the next page.
