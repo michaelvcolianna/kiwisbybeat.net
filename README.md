@@ -4,7 +4,7 @@ A reimagining of the Kiwis By Beat website by <a href="https://en.wikipedia.org/
 
 ### Searching For Kiwis chat
 
-Are you a fan of Ryan's? Would you like to help with the search for missing artwork? Join us on <a href="https://discord.gg/S7HYmBQuqE" target="_blank" rel="noopener noreferrer">Discord</a>.
+Are you a fan of Ryan's? Would you like to help with the search for missing artwork? Reach out to join us on Discord. (Registrations are closed due to spammers.)
 
 ### Other Fan Archives
 
